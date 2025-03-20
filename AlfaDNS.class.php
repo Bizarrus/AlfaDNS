@@ -18,6 +18,7 @@
 		private $token		= null;
 		
 		/**
+		  * The Constructor of the Class.
 		  * @method void __construct(string $username, string $password)
 		  *
 		  * @param string $username The Username
@@ -30,6 +31,7 @@
 		}
 		
 		/**
+		  * Internal call HTTP Request
 		  * @method [ $headers, $document, $token ] call(string $action, array $data = null, array $headers = [], array $cookies = [])
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the Alfahosting DNS server account.
 		  *

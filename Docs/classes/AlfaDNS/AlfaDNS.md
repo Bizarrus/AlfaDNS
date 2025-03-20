@@ -13,7 +13,7 @@
 
 ### __construct
 
-
+The Constructor of the Class.
 
 ```php
 public AlfaDNS::__construct(string $username, string $password): mixed
@@ -43,7 +43,7 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 ---
 ### call
 
-
+Internal call HTTP Request
 
 ```php
 private AlfaDNS::call(string $action, array $data = null, array $headers = [], array $cookies = []): mixed
