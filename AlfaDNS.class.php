@@ -19,6 +19,7 @@
 		
 		/**
 		  * The Constructor of the Class.
+		  *
 		  * @method void __construct(string $username, string $password)
 		  *
 		  * @param string $username The Username
