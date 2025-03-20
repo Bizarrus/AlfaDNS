@@ -22,8 +22,6 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 
 
 
-
-
 **Parameters:**
 
 | Parameter | Type | Description |
@@ -44,8 +42,6 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 ```php
 public AlfaDNS::getDomains(int $limit = 10, int $page = 1): array
 ```
-
-
 
 
 
@@ -78,8 +74,6 @@ public AlfaDNS::getDomain(string $name): object
 
 
 
-
-
 **Parameters:**
 
 | Parameter | Type | Description |
@@ -105,8 +99,6 @@ public AlfaDNS::getDomainID(string $name): int
 
 
 
-
-
 **Parameters:**
 
 | Parameter | Type | Description |
@@ -126,8 +118,6 @@ public AlfaDNS::getDomainID(string $name): int
 ```php
 public AlfaDNS::getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
 ```
-
-
 
 
 
@@ -161,8 +151,6 @@ public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $n
 
 
 
-
-
 **Parameters:**
 
 | Parameter | Type | Description |
@@ -184,8 +172,6 @@ public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $n
 ```php
 public AlfaDNS::updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
 ```
-
-
 
 
 
@@ -221,8 +207,6 @@ public AlfaDNS::createRecord(string $domain, string $name, string $type, string 
 
 
 
-
-
 **Parameters:**
 
 | Parameter | Type | Description |
@@ -247,8 +231,6 @@ public AlfaDNS::createRecord(string $domain, string $name, string $type, string 
 ```php
 public AlfaDNS::deleteRecord(string $domain, string $record): mixed
 ```
-
-
 
 
 
