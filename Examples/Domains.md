@@ -5,7 +5,7 @@ Retrieves the domains entered in the name server and their IDs.
 A Full Example can be found on [Domains.php](Domains.php).
 
 ```!php
-$dns		=  new AlfaDNS('<username>', '<password>');
+$dns		= new AlfaDNS('<username>', '<password>');
 $domains	= $dns->getDomains();
 
 print_r($domains);

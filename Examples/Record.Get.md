@@ -5,7 +5,7 @@ Get a DNS record.
 A Full Example can be found on [Record.Get.php](Record.Get.php).
 
 ```!php
-$dns		=  new AlfaDNS('<username>', '<password>');
+$dns		= new AlfaDNS('<username>', '<password>');
 $record		= $dns->getRecord('example.com', 'TXT', '_acme-challenge.example.com');
 
 print_r($record);

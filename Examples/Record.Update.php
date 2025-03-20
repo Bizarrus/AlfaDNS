@@ -1,7 +1,10 @@
 <?php
 	use AlfaDNS\AlfaDNS;
 	
-	$dns =  new AlfaDNS('<username>', '<password>');
+	$dns		=  new AlfaDNS('<username>', '<password>');
+	$records	= $dns->getRecords('example.com', 'TXT');
 	
-	$dns->updateRecord('example.com', '_acme-challenge.example.com', 'TXT', 'NEWVALUE' . time(), 0, 60);
+	foreach($records AS $record) {
+		$dns->updateRecord('example.com', $record, 'NEWVALUE-' . time(), 0, 60);
+	}
 ?>

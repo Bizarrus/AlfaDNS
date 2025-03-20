@@ -12,5 +12,5 @@ Authentication takes place via the Alfahosting DNS server account.
 A Full Example can be found on [Auth.php](Auth.php).
 
 ```!php
-$dns =  new AlfaDNS('<username>', '<password>');
+$dns = new AlfaDNS('<username>', '<password>');
 ```
