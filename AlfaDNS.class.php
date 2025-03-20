@@ -271,10 +271,8 @@
 			return $record;
 		}
 		
-		public function updateRecord($domain, $name, $type, $value, $prio = 0, $ttl = 60) {
-			$domain_id							= $this->getDomainID($domain);
-			$record								= $this->getRecord($domain_id, $type, $name);
-			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $domain_id), [
+		public function updateRecord($domain, $record, $value, $prio = 0, $ttl = 60) {
+			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $this->getDomainID($domain)), [
 				'id'				=> $record->id,
 				'type'				=> $record->type,
 				'name'				=> $record->name,
