@@ -217,6 +217,7 @@
 		}
 		
 		/**
+		  * Receives all DNS entries for a specific domain.
 		  * @method array getDomains(int $limit, int $page)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Domains.md Retrieves the domains entered in the name server and their IDs.
 		  *
