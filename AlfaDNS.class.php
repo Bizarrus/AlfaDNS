@@ -176,6 +176,7 @@
 		
 		/**
 		  * @method boolean login(string $username, string $password)
+		  * @internal
 		  *
 		  * @param string $username The Username
 		  * @param string $password The Password

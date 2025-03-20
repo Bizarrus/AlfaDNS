@@ -41,36 +41,6 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 
 
 ---
-### login
-
-
-
-```php
-protected AlfaDNS::login(string $username, string $password): bool
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `username` | **string** | The Username |
-| `password` | **string** | The Password |
-
-
-**Return Value:**
-
-
-
-
-
----
 ### getDomains
 
 
