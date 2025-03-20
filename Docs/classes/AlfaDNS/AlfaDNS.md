@@ -11,7 +11,6 @@
 
 ## Methods
 
-
 The Constructor of the Class.
 
 ```php
@@ -42,7 +41,6 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 ---
 
 
-
 ```php
 public AlfaDNS::getDomains(int $limit = 10, int $page = 1): array
 ```
@@ -69,7 +67,6 @@ public AlfaDNS::getDomains(int $limit = 10, int $page = 1): array
 
 
 ---
-
 
 
 ```php
@@ -99,7 +96,6 @@ public AlfaDNS::getDomain(string $name): object
 ---
 
 
-
 ```php
 public AlfaDNS::getDomainID(string $name): int
 ```
@@ -125,7 +121,6 @@ public AlfaDNS::getDomainID(string $name): int
 
 
 ---
-
 
 
 ```php
@@ -157,7 +152,6 @@ public AlfaDNS::getRecords(mixed $domain, string $type = &#039;*&#039;, string $
 ---
 
 
-
 ```php
 public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
 ```
@@ -185,7 +179,6 @@ public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $n
 
 
 ---
-
 
 
 ```php
@@ -219,7 +212,6 @@ public AlfaDNS::updateRecord(string $domain, string $record, string $value, stri
 ---
 
 
-
 ```php
 public AlfaDNS::createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
 ```
@@ -250,7 +242,6 @@ public AlfaDNS::createRecord(string $domain, string $name, string $type, string 
 
 
 ---
-
 
 
 ```php
