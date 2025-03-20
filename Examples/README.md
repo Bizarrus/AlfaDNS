@@ -13,3 +13,4 @@
 | Typ | Description | Example |
 |---|---|---|
 | ACME: Challenges | Receives all ACME challenge DNS entries for a specific domain. | [Read](ACME.List.md) |
+| ACME: Renewal | Renewal-Process for Wildcard-Certificates with `Let's Encrypt` over ACME challenge DNS entries for a specific domain. | [Read](ACME.Renewal.md) |
