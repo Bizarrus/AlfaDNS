@@ -1,6 +1,5 @@
 ---
 title: \AlfaDNS\AlfaDNS
-footer: false
 ---
 
 # AlfaDNS

@@ -1,6 +1,5 @@
 ---
 title: Documentation
-footer: false
 ---
 
 # Documentation
