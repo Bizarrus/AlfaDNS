@@ -19,6 +19,7 @@
 		
 		/**
 		  * The Constructor of the Class.
+		  * Authentication takes place via the Alfahosting DNS server account.
 		  *
 		  * @method void __construct(string $username, string $password)
 		  *
@@ -218,7 +219,8 @@
 		}
 		
 		/**
-		  * Receives all DNS entries for a specific domain.
+		  * Retrieves the domains entered in the name server and their IDs.
+		  *
 		  * @method array getDomains(int $limit, int $page)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Domains.md Retrieves the domains entered in the name server and their IDs.
 		  *
@@ -249,6 +251,8 @@
 		}
 		
 		/**
+		  * Get the Domain data by the name.
+		  *
 		  * @method object getDomain(string $name)
 		  *
 		  * @param string $name The Domain name
@@ -274,6 +278,8 @@
 		}
 		
 		/**
+		  * Get the unique ID of an Domain
+		  *
 		  * @method int getDomainID(string $name)
 		  *
 		  * @param string $name The Domain name
@@ -285,6 +291,8 @@
 		}
 		
 		/**
+		  * Receives all DNS entries for a specific domain.
+		  *
 		  * @method array getRecords(string $domain, string $type, string $name)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Records.md Receives all DNS entries for a specific domain.
 		  *
@@ -328,6 +336,8 @@
 		}
 		
 		/**
+		  * Get a DNS record.
+		  *
 		  * @method object|null getRecord(string $domain, string $type, string $name)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Get.md Get a DNS record.
 		  *
@@ -357,6 +367,8 @@
 		}
 		
 		/**
+		  * Update a DNS record.
+		  *
 		  * @method void updateRecord(string $domain, object $record, string $value, int $prio = 0, int $ttl = 60)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Update.md Update a DNS record.
 		  *
@@ -381,6 +393,8 @@
 		}
 		
 		/**
+		  * Create a DNS record.
+		  *
 		  * @method void createRecord(string $domain, string $name, string $type, string $value, int $prio = 0, int $ttl = 60)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Create.md Create a DNS record.
 		  *
@@ -407,6 +421,8 @@
 		}
 		
 		/**
+		  * Deletes a DNS record.
+		  *
 		  * @method void deleteRecord(string $domain, object $record)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Delete.md Deletes a DNS record.
 		  *

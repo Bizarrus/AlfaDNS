@@ -21,7 +21,7 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 
 
 The Constructor of the Class.
-
+Authentication takes place via the Alfahosting DNS server account.
 
 **Parameters:**
 
@@ -47,7 +47,7 @@ public AlfaDNS::getDomains(int $limit = 10, int $page = 1): array
 
 
 
-Receives all DNS entries for a specific domain.
+Retrieves the domains entered in the name server and their IDs.
 
 
 **Parameters:**
@@ -74,7 +74,7 @@ public AlfaDNS::getDomain(string $name): object
 
 
 
-
+Get the Domain data by the name.
 
 
 **Parameters:**
@@ -100,7 +100,7 @@ public AlfaDNS::getDomainID(string $name): int
 
 
 
-
+Get the unique ID of an Domain
 
 
 **Parameters:**
@@ -126,7 +126,7 @@ public AlfaDNS::getRecords(mixed $domain, string $type = &#039;*&#039;, string $
 
 
 
-
+Receives all DNS entries for a specific domain.
 
 
 **Parameters:**
@@ -154,7 +154,7 @@ public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $n
 
 
 
-
+Get a DNS record.
 
 
 **Parameters:**
@@ -182,7 +182,7 @@ public AlfaDNS::updateRecord(string $domain, string $record, string $value, stri
 
 
 
-
+Update a DNS record.
 
 
 **Parameters:**
@@ -212,7 +212,7 @@ public AlfaDNS::createRecord(string $domain, string $name, string $type, string 
 
 
 
-
+Create a DNS record.
 
 
 **Parameters:**
@@ -243,7 +243,7 @@ public AlfaDNS::deleteRecord(string $domain, string $record): mixed
 
 
 
-
+Deletes a DNS record.
 
 
 **Parameters:**
