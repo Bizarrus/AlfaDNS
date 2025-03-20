@@ -3,6 +3,7 @@
 	use skoerfgen\ACMECert\ACMECert;
 	
 	$domain		= 'example.com';
+	$days		= 5; // When should the certificate be renewed?
 	$test		= true; // DEMO-Mode on Let's Encrypt
 	$acme		= new ACMECert('https://' . ($test ? 'acme-staging-v02' : 'acme-v02') . '.api.letsencrypt.org/directory');
 	$dns		= new AlfaDNS('<username>', '<password>');
@@ -70,7 +71,7 @@
 				$expiring	= $cert['validTo_time_t'];
 				
 				/* If Cert is expiring in under 5 days */
-				if($expiring > (time() + (5 * 86400))) {
+				if($expiring < (time() + ($days * 86400))) {
 					printf("\033[1;34mCert expiring on %s\033[39m", date('d.m.Y - H:i:s', $expiring));
 					print PHP_EOL;
 					
