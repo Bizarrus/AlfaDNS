@@ -34,7 +34,7 @@
 		  * Internal call HTTP Request
 		  * @method [ $headers, $document, $token ] call(string $action, array $data = null, array $headers = [], array $cookies = [])
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the Alfahosting DNS server account.
-		  * @private
+		  * @internal
 		  * @param string $action The Action-URL
 		  * @param array $data The POST-Data for the Request
 		  * @param array $headers Additional Headers for the Request

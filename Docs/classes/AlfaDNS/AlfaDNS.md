@@ -41,38 +41,6 @@ public AlfaDNS::__construct(string $username, string $password): mixed
 
 
 ---
-### call
-
-Internal call HTTP Request
-
-```php
-private AlfaDNS::call(string $action, array $data = null, array $headers = [], array $cookies = []): mixed
-```
-
-
-
-
-
-
-
-
-**Parameters:**
-
-| Parameter | Type | Description |
-|-----------|------|-------------|
-| `action` | **string** | The Action-URL |
-| `data` | **array** | The POST-Data for the Request |
-| `headers` | **array** | Additional Headers for the Request |
-| `cookies` | **array** | Additional Cookies for the Request |
-
-
-**Return Value:**
-
-
-
-
-
----
 ### ajax
 
 
