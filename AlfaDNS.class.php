@@ -35,6 +35,7 @@
 		  * @method [ $headers, $document, $token ] call(string $action, array $data = null, array $headers = [], array $cookies = [])
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the Alfahosting DNS server account.
 		  * @internal
+		  *
 		  * @param string $action The Action-URL
 		  * @param array $data The POST-Data for the Request
 		  * @param array $headers Additional Headers for the Request
@@ -132,6 +133,7 @@
 		
 		/**
 		  * @method JSON|null ajax(string $action, array $data = null)
+		  * @internal
 		  *
 		  * @param string $action The Action-URL
 		  * @param array $data The POST-Data for the Request
@@ -157,6 +159,7 @@
 				
 		/**
 		  * @method [ $headers, $document, $token ] form(string $action, array $data = null, array $headers = [])
+		  * @internal
 		  *
 		  * @param string $action The Action-URL
 		  * @param array $data The POST-Data for the Request
