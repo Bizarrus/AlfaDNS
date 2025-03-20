@@ -1,6 +1,3 @@
----
-title: \AlfaDNS\AlfaDNS
----
 
 # AlfaDNS
 
