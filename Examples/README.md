@@ -8,3 +8,8 @@
 | Record: Create | Create a DNS record. | [Read](Record.Create.md) |
 | Record: Update | Update a DNS record. | [Read](Record.Update.md) |
 | Record: Delete | Deletes a DNS record. | [Read](Record.Delete.md) |
+
+# Extended Examples
+| Typ | Description | Example |
+|---|---|---|
+| ACME: Challenges | Receives all ACME challenge DNS entries for a specific domain. | [Read](ACME.List.md) |
