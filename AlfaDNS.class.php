@@ -1,17 +1,45 @@
 <?php
+	/*
+		@author		Adrian Preuß
+		@copyright	2025
+		@license	MIT
+		@version	1.0.0
+	*/
+	
 	namespace AlfaDNS;
 	
+	/**
+	  * @namespace	AlfaDNS
+	  * @class		AlfaDNS
+	*/
 	class AlfaDNS {
 		private $url		= 'https://dns.alfahosting.de';
 		private $cookies	= [];
 		private $token		= null;
 		
+		/**
+		  * @method void __construct(string $username, string $password)
+		  *
+		  * @param string $username The Username
+		  * @param string $password The Password
+		*/
 		public function __construct($username, $password) {
 			$this->cookies['PHPSESSID']	= bin2hex(random_bytes(13));
 			
 			$this->login($username, $password);
 		}
 		
+		/**
+		  * @method [ $headers, $document, $token ] call(string $action, array $data = null, array $headers = [], array $cookies = [])
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the Alfahosting DNS server account.
+		  *
+		  * @param string $action The Action-URL
+		  * @param array $data The POST-Data for the Request
+		  * @param array $headers Additional Headers for the Request
+		  * @param array $cookies Additional Cookies for the Request
+		  *
+		  * @return [ $headers, $document, $token ]
+		*/
 		private function call($action, $data = null, $headers = [], $cookies = []) {
 			$request				= curl_init();
 			$headers				= array_merge([
@@ -100,6 +128,14 @@
 			];
 		}
 		
+		/**
+		  * @method JSON|null ajax(string $action, array $data = null)
+		  *
+		  * @param string $action The Action-URL
+		  * @param array $data The POST-Data for the Request
+		  *
+		  * @return null|[ $headers, $document, $token ]
+		*/
 		private function ajax($action, $data = null) {
 			list($headers, $request) = $this->call($action, $data, [
 				'Accept: application/json, text/javascript, */*; q=0.01',
@@ -116,7 +152,16 @@
 			
 			return null;
 		}
-		
+				
+		/**
+		  * @method [ $headers, $document, $token ] form(string $action, array $data = null, array $headers = [])
+		  *
+		  * @param string $action The Action-URL
+		  * @param array $data The POST-Data for the Request
+		  * @param array $headers Additional Headers for the Request
+		  *
+		  * @return [ $headers, $document, $token ]
+		*/
 		private function form($action, $data = null, $headers = []) {
 			return $this->call($action, $data, array_merge([
 				'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
@@ -124,21 +169,16 @@
 			], $headers));
 		}
 		
-		private function unserialize($data) {
-			preg_match('/^(.+):(\d+):"(.*)";$/', $data, $matches);
-
-			if($matches) {
-				return (object) [
-					'name'		=> $matches[1],
-					'value'		=> $matches[3],
-					'length'	=> (int) $matches[2]
-				];
-			}
-			
-			return null;
-		}
-		
-		public function login($username, $password) {
+		/**
+		  * @method boolean login(string $username, string $password)
+		  *
+		  * @param string $username The Username
+		  * @param string $password The Password
+		  *
+		  * @throws Exception
+		  * @return boolean
+		*/
+		protected function login($username, $password) {
 			list($headers, $document, $token) = $this->call('/site/login');
 			
 			if(empty($token)) {
@@ -170,6 +210,15 @@
 			return true;
 		}
 		
+		/**
+		  * @method array getDomains(int $limit, int $page)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Domains.md Retrieves the domains entered in the name server and their IDs.
+		  *
+		  * @param int $limit Maximum of domains in the list
+		  * @param int $page The page of the List
+		  *
+		  * @return array
+		*/
 		public function getDomains($limit = 10, $page = 1) {
 			$domains	= [];
 			$json		= $this->ajax(sprintf('/soa/index?%s', http_build_query([
@@ -191,6 +240,13 @@
 			return $domains;
 		}
 		
+		/**
+		  * @method object getDomain(string $name)
+		  *
+		  * @param string $name The Domain name
+		  *
+		  * @return object
+		*/
 		public function getDomain($name) {
 			$name		= trim(strtolower($name));
 			$domains	= $this->getDomains(9999999);
@@ -209,12 +265,25 @@
 			return $domain;
 		}
 		
+		/**
+		  * @method int getDomainID(string $name)
+		  *
+		  * @param string $name The Domain name
+		  *
+		  * @return int
+		*/
 		public function getDomainID($name) {
 			return $this->getDomain($name)->id;
 		}
 		
-		/*
-			*, TXT, NS, A,
+		/**
+		  * @method array getRecords(string $domain, string $type, string $name)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Records.md Receives all DNS entries for a specific domain.
+		  *
+		  * @param string $name The Domain name
+		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  *
+		  * @return array
 		*/
 		public function getRecords($domain, $type = '*', $name = '*') {
 			if(is_string($domain)) {
@@ -250,6 +319,16 @@
 			return $records;
 		}
 		
+		/**
+		  * @method object|null getRecord(string $domain, string $type, string $name)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Get.md Get a DNS record.
+		  *
+		  * @param string $name The Domain name
+		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  * @param string $name The Record name
+		  *
+		  * @return object|null
+		*/
 		public function getRecord($domain, $type = '*', $name) {
 			$records	= $this->getRecords($domain, $type, $name);
 			$record		= null;
@@ -263,14 +342,22 @@
 					continue;
 				}
 				
-				print_r($entry);
-				
 				$record = $entry;
 			}
 			
 			return $record;
 		}
 		
+		/**
+		  * @method void updateRecord(string $domain, object $record, string $value, int $prio = 0, int $ttl = 60)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Update.md Update a DNS record.
+		  *
+		  * @param string $domain The Domain name
+		  * @param string $record The Record object
+		  * @param string $value The new value of the Record
+		  * @param string $prio The new priority of the Record
+		  * @param string $ttl The new ttl of the Record
+		*/
 		public function updateRecord($domain, $record, $value, $prio = 0, $ttl = 60) {
 			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $this->getDomainID($domain)), [
 				'id'				=> $record->id,
@@ -285,6 +372,17 @@
 			]);		
 		}
 		
+		/**
+		  * @method void createRecord(string $domain, string $name, string $type, string $value, int $prio = 0, int $ttl = 60)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Create.md Create a DNS record.
+		  *
+		  * @param string $domain The Domain name
+		  * @param string $name The Record name
+		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  * @param string $value The new value of the Record
+		  * @param string $prio The new priority of the Record
+		  * @param string $ttl The new ttl of the Record
+		*/
 		public function createRecord($domain, $name, $type, $value, $prio = 0, $ttl = 60) {
 			$domain_id							= $this->getDomainID($domain);
 			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $domain_id), [
@@ -300,6 +398,13 @@
 			]);		
 		}
 		
+		/**
+		  * @method void deleteRecord(string $domain, object $record)
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Delete.md Deletes a DNS record.
+		  *
+		  * @param string $domain The Domain name
+		  * @param string $record The Record object
+		*/
 		public function deleteRecord($domain, $record) {
 			$domain_id							= $this->getDomainID($domain);
 			
