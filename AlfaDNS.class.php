@@ -1,11 +1,15 @@
 <?php
-	/*
-		@author		Adrian Preuß
-		@copyright	2025
-		@license	MIT
-		@version	1.0.0
-	*/
-	
+	/**
+	 * AlfaDNS
+	 * ▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔▔
+	 * Licensed and copyrighted materials - Property of Adrian Preuß.
+	 * © Copyright 2025. All Rights Reserved.
+	 *
+	 * @version		1.0.0
+	 * @author 		Adrian Preuß
+	 * @copyright	2025
+	 * @license		MIT
+	 */
 	namespace AlfaDNS;
 	
 	/**
