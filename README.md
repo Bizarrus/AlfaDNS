@@ -1,9 +1,9 @@
 # AlfaDNS
-Helper class for the Alfahosting DNS to automatically read/write nameserver entries for domains. 
+Helper class for the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS to automatically read/write nameserver entries for domains. 
 
 This project is used, for example, with the Library [GitHub: skoerfgen/ACMECert](https://github.com/skoerfgen/ACMECert) to automatically renew `Let's Encrypt` wildcard certificates.
 
-This project was created because Alfahosting does not offer an interface for the DNS server for normal customers and the [SOAP interface](https://dns.alfahosting.de/api/) is **only** available from the [Name 500](https://alfahosting.de/eigene-nameserver/) package plan. This library automatically connects to the normal user interface via HTTP request and can be used for automated handling of DNS settings.
+This project was created because ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` does not offer an interface for the DNS server for normal customers and the [SOAP interface](https://dns.alfahosting.de/api/) is **only** available from the [Name 500](https://alfahosting.de/eigene-nameserver/) package plan. This library automatically connects to the normal user interface via HTTP request and can be used for automated handling of DNS settings.
 
 #### Original Webinterface
 ![AlfaDNS](https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/AlfaDNS.png?raw=true)
@@ -24,7 +24,7 @@ $domain_id = $dns->getDomainID($name);
 # Examples
 | Typ | Description | Example |
 |---|---|---|
-| Authentification | Authentication takes place via the Alfahosting DNS server account. | [Read](Examples/Auth.md) |
+| Authentification | Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account. | [Read](Examples/Auth.md) |
 | Domains | Retrieves the domains entered in the name server and their IDs. | [Read](Examples/Domains.md) |
 | Records | Receives all DNS entries for a specific domain. | [Read](Examples/Records.md) |
 | Record: Get | Get a DNS record. | [Read](Examples/Record.Get.md) |
