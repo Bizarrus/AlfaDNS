@@ -12,6 +12,14 @@ This project was created because Alfahosting does not offer an interface for the
 ## Methods
 > :small_blue_diamond: [`__construct(string : $username, string : $password) : void`](#__construct)
 > 
+> :black_circle: [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
+> 
+> :black_circle: [`ajax(string : $action, array : $data = null) : array`](#ajax)
+> 
+> :black_circle: [`form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
+> 
+> :small_red_diamond: [`login(string : $username, string : $password) : bool`](#login)
+> 
 > :small_blue_diamond: [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
 > :small_blue_diamond: [`getDomain(string : $name) : object|null`](#getdomain)
@@ -50,6 +58,105 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
+
+
+---
+### :black_circle: <a name="call" id="call">call</a>
+```php
+private call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array
+```
+
+
+
+
+Internal call HTTP Request
+
+
+#### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `action` | **string** | The Action-URL |
+| `data` | **array** | The POST-Data for the Request |
+| `headers` | **array** | Additional Headers for the Request |
+| `cookies` | **array** | Additional Cookies for the Request |
+
+
+
+#### Returns: `array`
+
+
+---
+### :black_circle: <a name="ajax" id="ajax">ajax</a>
+```php
+private ajax(string : $action, array : $data = null) : array
+```
+
+
+
+
+
+
+
+#### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `action` | **string** | The Action-URL |
+| `data` | **array** | The POST-Data for the Request |
+
+
+
+#### Returns: `array`
+
+
+---
+### :black_circle: <a name="form" id="form">form</a>
+```php
+private form(string : $action, array : $data = null, array : $headers = []) : array
+```
+
+
+
+
+
+
+
+#### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `action` | **string** | The Action-URL |
+| `data` | **array** | The POST-Data for the Request |
+| `headers` | **array** | Additional Headers for the Request |
+
+
+
+#### Returns: `array`
+
+
+---
+### :large_red_diamond: <a name="login" id="login">login</a>
+```php
+protected login(string : $username, string : $password) : bool
+```
+
+
+
+
+
+
+
+#### Parameters
+
+| Parameter | Type | Description |
+|-----------|------|-------------|
+| `username` | **string** | The Username |
+| `password` | **string** | The Password |
+
+
+
+#### Returns: `bool`
 
 
 ---
