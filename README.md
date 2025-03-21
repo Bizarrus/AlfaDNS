@@ -8,8 +8,8 @@ This project was created because ![](https://raw.githubusercontent.com/Bizarrus/
 #### Original Webinterface
 ![AlfaDNS](https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/AlfaDNS.png?raw=true)
 
-# Usage
-```!php
+# Sample Usage
+```php
 $dns =  new AlfaDNS('<username>', '<password>');
 
 $domains = $dns->getDomains($limit = 10, $page = 1);
