@@ -50,7 +50,7 @@ Be a team-player, all feedbacks of my donations will have the priority. I will b
 <dl><dd><dl><dd><dl><dd><dl><dd>
 
 The Constructor of the Class.
-Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account.
+Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account (See Screenshot: [Examples/Auth.Data.png](https://github.com/Bizarrus/AlfaDNS/raw/main/Examples/Auth.Data.png?raw=true)).
 
 <h6>Usage</h6>
 <pre lang="php">$dns = new AlfaDNS(string : $username, string : $password);</pre>
