@@ -34,7 +34,7 @@
 		  * @param string $username The Username
 		  * @param string $password The Password
 		*/
-		public function __construct($username, $password) {
+		public function __construct(string $username, string $password) {
 			$this->cookies['PHPSESSID']	= bin2hex(random_bytes(13));
 			
 			$this->login($username, $password);
@@ -53,7 +53,7 @@
 		  *
 		  * @return [ $headers, $document, $token ]
 		*/
-		private function call($action, $data = null, $headers = [], $cookies = []) : array {
+		private function call(string $action, array $data = null, array $headers = [], array $cookies = []) : array {
 			$request				= curl_init();
 			$headers				= array_merge([
 				sprintf('Cookie: %s',		http_build_query(array_merge($this->cookies, $cookies), '', ';')),
