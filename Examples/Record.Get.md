@@ -4,7 +4,7 @@ Get a DNS record.
 # Example
 A Full Example can be found on [Record.Get.php](Record.Get.php).
 
-```!php
+```php
 $dns		= new AlfaDNS('<username>', '<password>');
 $record		= $dns->getRecord('example.com', 'TXT', '_acme-challenge.example.com');
 
@@ -12,8 +12,8 @@ print_r($record);
 ```
 
 # Output
-```
-stdClass Object (
+```python
+Object (
     [id]		=> 20123456
     [name]		=> _acme-challenge.example.com
     [type]		=> TXT
