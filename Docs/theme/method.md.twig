@@ -1,6 +1,6 @@
 {# Method signature #}
 ---
-### <a name="{{ method.name|raw }}">```!php
+### <a name="{{ method.name|raw }}">```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
