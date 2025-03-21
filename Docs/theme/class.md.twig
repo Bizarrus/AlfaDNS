@@ -47,7 +47,7 @@
 ## Methods
 {% autoescape false %}
 {% for method in node.methods %}
-> {% if method.visibility == 'protected' %}:small_red_diamond:{% endif %}{% if method.visibility == 'private' %}:black_circle:{% endif %}{% if method.visibility == 'public' %}:small_blue_diamond:{% endif %} [`{{ method.name|raw }}({% for argument in method.arguments %}
+> {% if method.visibility == 'protected' %}:small_orange_diamond:{% endif %}{% if method.visibility == 'private' %}:black_circle:{% endif %}{% if method.visibility == 'public' %}:small_blue_diamond:{% endif %} [`{{ method.name|raw }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}

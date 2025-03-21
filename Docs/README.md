@@ -18,7 +18,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 > :black_circle: [`form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
 > 
-> :small_red_diamond: [`login(string : $username, string : $password) : bool`](#login)
+> :small_orange_diamond: [`login(string : $username, string : $password) : bool`](#login)
 > 
 > :small_blue_diamond: [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
