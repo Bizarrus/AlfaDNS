@@ -34,7 +34,7 @@
 		  * @param string $username The Username
 		  * @param string $password The Password
 		*/
-		public function __construct(string $username, string $password) : void {
+		public function __construct(string $username, string $password) {
 			$this->cookies['PHPSESSID']	= bin2hex(random_bytes(13));
 			
 			$this->login($username, $password);
@@ -194,7 +194,7 @@
 		  * @throws Exception
 		  * @return boolean
 		*/
-		protected function login(string $username, string $password) : boolean {
+		protected function login(string $username, string $password) : bool {
 			list($headers, $document, $token) = $this->call('/site/login');
 			
 			if(empty($token)) {

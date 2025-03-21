@@ -23,7 +23,7 @@
 {{ method.description|raw }}
 
 <h6>Usage</h6>
-<pre lang="php">{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
+<pre lang="php">{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}{% if method.response.type|replace({'void': ''})|raw %}$RES = {% endif %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
 {% if argument.type %}{{ argument.type|split('|')|join(' | ') }} : {% endif %}
 {{- argument.byReference ? '&' }} ${{- argument.name }}{{- argument.default ? ' = ' ~ argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
@@ -51,7 +51,7 @@
 
 {% if method.response.description %}
 
-{%if method.response.type|replace({'void': ''})|raw%}
+{% if method.response.type|replace({'void': ''})|raw %}
 <h6>Returns: {% for return in method.response.type|raw|split('|') %}
 <kbd>{{ return }}</kbd>
 {%- if not loop.last %}, {% endif %}
