@@ -8,6 +8,13 @@ This project was created because ![](https://raw.githubusercontent.com/Bizarrus/
 #### Original Webinterface
 ![AlfaDNS](https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/AlfaDNS.png?raw=true)
 
+# Support me! ![Sponsors](https://img.shields.io/github/sponsors/fruithost?style=social)
+Donations are an important contribution to the development of OpenSource projects. With your donation you can help us to advance our project. Your support enables us to support the programming.
+
+Be a team-player, all feedbacks of our donations will have the priority. We will build the site for **YOU**!
+
+[![PAYPAL]](https://paypal.me/debitdirect)
+
 # Sample Usage
 ```php
 $dns =  new AlfaDNS('<username>', '<password>');
@@ -38,3 +45,4 @@ $domain_id = $dns->getDomainID($name);
 | ACME: Challenges | Receives all ACME challenge DNS entries for a specific domain. | [Read](Examples/ACME.List.md) |
 | ACME: Renewal | Renewal-Process for Wildcard-Certificates with `Let's Encrypt` over ACME challenge DNS entries for a specific domain. | [Read](Examples/ACME.Renewal.md) |
 
+[PAYPAL]: https://img.shields.io/badge/PayPal-%24?style=for-the-badge&logo=paypal&color=%23169BD7
