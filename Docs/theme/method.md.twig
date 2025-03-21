@@ -49,7 +49,7 @@
 
 {%if method.response.type|replace({'void': ''})|raw%}
 <h6>Returns: {% for return in method.response.type|raw|split('|') %}
-<strong>{{ return }}</strong>
+<kbd>{{ return }}</kbd>
 {%- if not loop.last %}, {% endif %}
 {% endfor %}</h6>
 {% endif %}

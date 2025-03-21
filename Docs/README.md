@@ -96,7 +96,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>array</strong></h6>
+<h6>Returns: <kbd>array</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
@@ -121,7 +121,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>array</strong></h6>
+<h6>Returns: <kbd>array</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="form" id="form">form</a></h4>
@@ -147,7 +147,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>array</strong></h6>
+<h6>Returns: <kbd>array</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟠 <a name="login" id="login">login</a></h4>
@@ -172,7 +172,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>bool</strong></h6>
+<h6>Returns: <kbd>bool</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
@@ -194,7 +194,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-<h6>Returns: <strong>array</strong></h6>
+<h6>Returns: <kbd>array</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
@@ -215,7 +215,7 @@ Get the Domain data by the name.
 
 
 
-<h6>Returns: <strong>object</strong>, <strong>null</strong></h6>
+<h6>Returns: <kbd>object</kbd>, <kbd>null</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
@@ -236,7 +236,7 @@ Get the unique ID of an Domain
 
 
 
-<h6>Returns: <strong>int</strong>, <strong>null</strong></h6>
+<h6>Returns: <kbd>int</kbd>, <kbd>null</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
@@ -259,7 +259,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-<h6>Returns: <strong>array</strong></h6>
+<h6>Returns: <kbd>array</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
@@ -282,7 +282,7 @@ Get a DNS record.
 
 
 
-<h6>Returns: <strong>object</strong>, <strong>null</strong></h6>
+<h6>Returns: <kbd>object</kbd>, <kbd>null</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
@@ -332,7 +332,7 @@ Create a DNS record.
 
 
 
-<h6>Returns: <strong>mixed</strong></h6>
+<h6>Returns: <kbd>mixed</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
