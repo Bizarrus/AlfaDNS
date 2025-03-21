@@ -60,7 +60,6 @@ $dns = new AlfaDNS(string : $username, string : $password);
 ```
 
 
-
 #### Parameters
 
 | Parameter | Type | Description |
@@ -74,6 +73,8 @@ $dns = new AlfaDNS(string : $username, string : $password);
 
 ---
 ### 🔴 <a name="call" id="call">call</a>
+> [!WARNING]
+> 🔴 This method is **private**.
 Internal call HTTP Request
 
 #### Usage
@@ -81,9 +82,6 @@ Internal call HTTP Request
 $dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);
 ```
 
-
-> [!WARNING]
-> 🔴 This method is **private**.
 
 #### Parameters
 
@@ -101,6 +99,8 @@ $dns->call(string : $action, array : $data = null, array : $headers = [], array 
 
 ---
 ### 🔴 <a name="ajax" id="ajax">ajax</a>
+> [!WARNING]
+> 🔴 This method is **private**.
 
 
 #### Usage
@@ -108,9 +108,6 @@ $dns->call(string : $action, array : $data = null, array : $headers = [], array 
 $dns->ajax(string : $action, array : $data = null);
 ```
 
-
-> [!WARNING]
-> 🔴 This method is **private**.
 
 #### Parameters
 
@@ -126,6 +123,8 @@ $dns->ajax(string : $action, array : $data = null);
 
 ---
 ### 🔴 <a name="form" id="form">form</a>
+> [!WARNING]
+> 🔴 This method is **private**.
 
 
 #### Usage
@@ -133,9 +132,6 @@ $dns->ajax(string : $action, array : $data = null);
 $dns->form(string : $action, array : $data = null, array : $headers = []);
 ```
 
-
-> [!WARNING]
-> 🔴 This method is **private**.
 
 #### Parameters
 
@@ -152,6 +148,8 @@ $dns->form(string : $action, array : $data = null, array : $headers = []);
 
 ---
 ### 🟠 <a name="login" id="login">login</a>
+> [!WARNING]
+> 🟠 This method is **protected**.
 
 
 #### Usage
@@ -159,9 +157,6 @@ $dns->form(string : $action, array : $data = null, array : $headers = []);
 $dns->login(string : $username, string : $password);
 ```
 
-
-> [!WARNING]
-> 🟠 This method is **protected**.
 
 #### Parameters
 
@@ -183,7 +178,6 @@ Retrieves the domains entered in the name server and their IDs.
 ```php
 $dns->getDomains(int : $limit = 10, int : $page = 1);
 ```
-
 
 
 #### Parameters
@@ -208,7 +202,6 @@ $dns->getDomain(string : $name);
 ```
 
 
-
 #### Parameters
 
 | Parameter | Type | Description |
@@ -230,7 +223,6 @@ $dns->getDomainID(string : $name);
 ```
 
 
-
 #### Parameters
 
 | Parameter | Type | Description |
@@ -250,7 +242,6 @@ Receives all DNS entries for a specific domain.
 ```php
 $dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');
 ```
-
 
 
 #### Parameters
@@ -276,7 +267,6 @@ $dns->getRecord(string : $domain, string : $type = '*', string : $name);
 ```
 
 
-
 #### Parameters
 
 | Parameter | Type | Description |
@@ -298,7 +288,6 @@ Update a DNS record.
 ```php
 $dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);
 ```
-
 
 
 #### Parameters
@@ -325,7 +314,6 @@ $dns->createRecord(string : $domain, string : $name, string : $type, string : $v
 ```
 
 
-
 #### Parameters
 
 | Parameter | Type | Description |
@@ -350,7 +338,6 @@ Deletes a DNS record.
 ```php
 $dns->deleteRecord(string : $domain, string : $record);
 ```
-
 
 
 #### Parameters

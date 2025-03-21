@@ -2,6 +2,18 @@
 ---
 {% autoescape false %}
 ### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a>
+{% if method.visibility == 'protected' %}
+> [!WARNING]
+> 🟠 This method is **protected**.
+{% endif %}
+{% if method.visibility == 'private' %}
+> [!WARNING]
+> 🔴 This method is **private**.
+{% endif %}
+{% if method.deprecated %}
+> [!WARNING]
+> This method is **deprecated**. This means that this method will likely be removed in a future version.
+{% endif %}
 {{ method.summary|raw }}
 {{ method.description|raw }}
 #### Usage
@@ -17,19 +29,6 @@
 {% if method.static %}* This method is **static**.{% endif %}
 {% if method.abstract %}* This method is **abstract**.{% endif %}
 {% if method.final %}* This method is **final**.{% endif %}
-
-{% if method.visibility == 'protected' %}
-> [!WARNING]
-> 🟠 This method is **protected**.
-{% endif %}
-{% if method.visibility == 'private' %}
-> [!WARNING]
-> 🔴 This method is **private**.
-{% endif %}
-{% if method.deprecated %}
-> [!WARNING]
-> This method is **deprecated**. This means that this method will likely be removed in a future version.
-{% endif %}
 
 {% if method.arguments is not empty %}
 #### Parameters
