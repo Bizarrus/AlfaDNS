@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### :large_orange_diamond: <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{{ method.name }}</a>
+### {% if method.visibility == 'protected' %}:red_diamond:{% endif %}{% if method.visibility == 'private' %}:black_circle:{% endif %}{% if method.visibility == 'public' %}:blue_diamond:{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{{ method.name }}</a>
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
