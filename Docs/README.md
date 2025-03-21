@@ -19,7 +19,7 @@ public __construct(string : $username, string : $password) : void
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -46,7 +46,7 @@ public getDomains(int : $limit = 10, int : $page = 1) : array
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -73,7 +73,7 @@ public getDomain(string : $name) : object|null
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -99,7 +99,7 @@ public getDomainID(string : $name) : int|null
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -125,7 +125,7 @@ public getRecords(string|object : $domain, string : $type = &#039;*&#039;, strin
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -153,7 +153,7 @@ public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $nam
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -181,7 +181,7 @@ public updateRecord(string : $domain, string : $record, string : $value, string 
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -211,7 +211,7 @@ public createRecord(string : $domain, string : $name, string : $type, string : $
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
@@ -242,7 +242,7 @@ public deleteRecord(string : $domain, string : $record) : void
 
 
 
-> [!WARN]
+> [!WARNING]
 > **Warning:** This method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
