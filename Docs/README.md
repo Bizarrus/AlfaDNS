@@ -74,9 +74,9 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### 🔴 <a name="call" id="call">$dns->call</a>
+### 🔴 <a name="call" id="call">call</a>
 ```php
-private call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array
+$dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array
 ```
 
 
@@ -100,9 +100,9 @@ Internal call HTTP Request
 
 
 ---
-### 🔴 <a name="ajax" id="ajax">$dns->ajax</a>
+### 🔴 <a name="ajax" id="ajax">ajax</a>
 ```php
-private ajax(string : $action, array : $data = null) : array
+$dns->ajax(string : $action, array : $data = null) : array
 ```
 
 
@@ -124,9 +124,9 @@ private ajax(string : $action, array : $data = null) : array
 
 
 ---
-### 🔴 <a name="form" id="form">$dns->form</a>
+### 🔴 <a name="form" id="form">form</a>
 ```php
-private form(string : $action, array : $data = null, array : $headers = []) : array
+$dns->form(string : $action, array : $data = null, array : $headers = []) : array
 ```
 
 
@@ -149,9 +149,9 @@ private form(string : $action, array : $data = null, array : $headers = []) : ar
 
 
 ---
-### 🟠 <a name="login" id="login">$dns->login</a>
+### 🟠 <a name="login" id="login">login</a>
 ```php
-protected login(string : $username, string : $password) : bool
+$dns->login(string : $username, string : $password) : bool
 ```
 
 
@@ -173,9 +173,9 @@ protected login(string : $username, string : $password) : bool
 
 
 ---
-### 🟢 <a name="getdomains" id="getdomains">$dns->getDomains</a>
+### 🟢 <a name="getdomains" id="getdomains">getDomains</a>
 ```php
-public getDomains(int : $limit = 10, int : $page = 1) : array
+$dns->getDomains(int : $limit = 10, int : $page = 1) : array
 ```
 
 
@@ -197,9 +197,9 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### 🟢 <a name="getdomain" id="getdomain">$dns->getDomain</a>
+### 🟢 <a name="getdomain" id="getdomain">getDomain</a>
 ```php
-public getDomain(string : $name) : object|null
+$dns->getDomain(string : $name) : object|null
 ```
 
 
@@ -220,9 +220,9 @@ Get the Domain data by the name.
 
 
 ---
-### 🟢 <a name="getdomainid" id="getdomainid">$dns->getDomainID</a>
+### 🟢 <a name="getdomainid" id="getdomainid">getDomainID</a>
 ```php
-public getDomainID(string : $name) : int|null
+$dns->getDomainID(string : $name) : int|null
 ```
 
 
@@ -243,9 +243,9 @@ Get the unique ID of an Domain
 
 
 ---
-### 🟢 <a name="getrecords" id="getrecords">$dns->getRecords</a>
+### 🟢 <a name="getrecords" id="getrecords">getRecords</a>
 ```php
-public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
+$dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
 
 
@@ -268,9 +268,9 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### 🟢 <a name="getrecord" id="getrecord">$dns->getRecord</a>
+### 🟢 <a name="getrecord" id="getrecord">getRecord</a>
 ```php
-public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
+$dns->getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
 
 
@@ -293,9 +293,9 @@ Get a DNS record.
 
 
 ---
-### 🟢 <a name="updaterecord" id="updaterecord">$dns->updateRecord</a>
+### 🟢 <a name="updaterecord" id="updaterecord">updateRecord</a>
 ```php
-public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
+$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
 
 
@@ -319,9 +319,9 @@ Update a DNS record.
 
 
 ---
-### 🟢 <a name="createrecord" id="createrecord">$dns->createRecord</a>
+### 🟢 <a name="createrecord" id="createrecord">createRecord</a>
 ```php
-public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
+$dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
 
 
@@ -347,9 +347,9 @@ Create a DNS record.
 
 
 ---
-### 🟢 <a name="deleterecord" id="deleterecord">$dns->deleteRecord</a>
+### 🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a>
 ```php
-public deleteRecord(string : $domain, string : $record) : void
+$dns->deleteRecord(string : $domain, string : $record) : void
 ```
 
 
