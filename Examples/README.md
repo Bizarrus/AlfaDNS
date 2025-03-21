@@ -1,7 +1,7 @@
 # Examples
 | Typ | Description | Example |
 |---|---|---|
-| Authentification | Authentication takes place via the Alfahosting DNS server account. | [Read](Auth.md) |
+| Authentification | Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account. | [Read](Auth.md) |
 | Domains | Retrieves the domains entered in the name server and their IDs. | [Read](Domains.md) |
 | Records | Receives all DNS entries for a specific domain. | [Read](Records.md) |
 | Record: Get | Get a DNS record. | [Read](Record.Get.md) |
