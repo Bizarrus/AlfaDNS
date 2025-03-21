@@ -41,7 +41,7 @@ This project was created because ![](https://raw.githubusercontent.com/Bizarrus/
 <dl><dd><dl><dd><dl><dd><dl><dd>
 
 The Constructor of the Class.
-Authentication takes place via the Alfahosting DNS server account.
+Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account.
 
 <h6>Usage</h6>
 <pre lang="php">$dns = new AlfaDNS(string : $username, string : $password);</pre>

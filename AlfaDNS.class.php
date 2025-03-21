@@ -27,7 +27,7 @@
 		
 		/**
 		  * The Constructor of the Class.
-		  * Authentication takes place via the Alfahosting DNS server account.
+		  * Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account.
 		  *
 		  * @method void __construct(string $username, string $password)
 		  *
@@ -43,7 +43,7 @@
 		/**
 		  * Internal call HTTP Request
 		  * @method [ $headers, $document, $token ] call(string $action, array $data = null, array $headers = [], array $cookies = [])
-		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the Alfahosting DNS server account.
+		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Auth.md Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` DNS server account.
 		  * @access private
 		  *
 		  * @param string $action The Action-URL
