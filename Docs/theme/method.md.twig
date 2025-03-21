@@ -3,6 +3,7 @@
 {% autoescape false %}
 <h4>{% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a></h4>
 {% if method.visibility == 'protected' %}
+<dl><dd><dl><dd><dl><dd><dl><dd>
 > [!IMPORTANT]
 > This method is **protected**.
 {% endif %}
@@ -14,7 +15,6 @@
 > [!WARNING]
 > This method is **deprecated**. This means that this method will likely be removed in a future version.
 {% endif %}
-<dl><dd><dl><dd><dl><dd><dl><dd>
 {{ method.summary|raw }}
 {{ method.description|raw }}
 
