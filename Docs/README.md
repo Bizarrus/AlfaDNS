@@ -5,6 +5,15 @@ Helper class for the ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs
 This project is used, for example, with the Library [:octocat:`skoerfgen/ACMECert`](https://github.com/skoerfgen/ACMECert) to automatically renew `Let's Encrypt` wildcard certificates.
 This project was created because ![](https://raw.githubusercontent.com/Bizarrus/AlfaDNS/refs/heads/main/Docs/alfahosting.png) `Alfahosting` does not offer an interface for the DNS server for normal customers and the [SOAP interface](https://dns.alfahosting.de/api/) is **only** available from the [Name 500](https://alfahosting.de/eigene-nameserver/) package plan. This library automatically connects to the normal user interface via HTTP request and can be used for automated handling of DNS settings.
 
+# Support me!
+Donations are an important contribution to the development of OpenSource projects. With your donation you can help me to advance all projects. Your support enables me to support my programming time.
+
+Be a team-player, all feedbacks of my donations will have the priority. I will build this for **YOU**!
+
+[![PAYPAL]](https://paypal.me/debitdirect)
+
+[PAYPAL]: https://img.shields.io/badge/PayPal-%24?style=for-the-badge&logo=paypal&color=%23169BD7
+
 
 
 
