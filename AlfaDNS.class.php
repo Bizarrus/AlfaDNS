@@ -356,7 +356,7 @@
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Get.md Get a DNS record.
 		  *
 		  * @param string $name The Domain name
-		  * @param string $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
+		  * @param string{"*", "A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT"} $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  * @param string $name The Record name
 		  *
 		  * @return object|null
@@ -414,7 +414,7 @@
 		  *
 		  * @param string $domain The Domain name
 		  * @param string $name The Record name
-		  * @param string $type The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
+		  * @param string{"A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT"} $type The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  * @param string $value The new value of the Record
 		  * @param string $prio The new priority of the Record
 		  * @param string $ttl The new ttl of the Record
