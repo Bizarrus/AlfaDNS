@@ -13,7 +13,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 ---
 ```php
-public __construct(string $username, string $password): mixed
+public function __construct(string $username, string $password): mixed
 ```
 
 
@@ -38,7 +38,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 ---
 ```php
-public getDomains(int $limit = 10, int $page = 1): array
+public function getDomains(int $limit = 10, int $page = 1): array
 ```
 
 
@@ -63,7 +63,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 ---
 ```php
-public getDomain(string $name): object
+public function getDomain(string $name): object
 ```
 
 
@@ -87,7 +87,7 @@ Get the Domain data by the name.
 
 ---
 ```php
-public getDomainID(string $name): int
+public function getDomainID(string $name): int
 ```
 
 
@@ -111,7 +111,7 @@ Get the unique ID of an Domain
 
 ---
 ```php
-public getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
+public function getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
 ```
 
 
@@ -137,7 +137,7 @@ Receives all DNS entries for a specific domain.
 
 ---
 ```php
-public getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
+public function getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
 ```
 
 
@@ -163,7 +163,7 @@ Get a DNS record.
 
 ---
 ```php
-public updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
+public function updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
 ```
 
 
@@ -191,7 +191,7 @@ Update a DNS record.
 
 ---
 ```php
-public createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
+public function createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
 ```
 
 
@@ -220,7 +220,7 @@ Create a DNS record.
 
 ---
 ```php
-public deleteRecord(string $domain, string $record): mixed
+public function deleteRecord(string $domain, string $record): mixed
 ```
 
 
