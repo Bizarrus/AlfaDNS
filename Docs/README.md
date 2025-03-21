@@ -51,8 +51,16 @@ Authentication takes place via the Alfahosting DNS server account.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>username</kbd></td><td><kbd>string</kbd></td><td><i>The Username</i></td></tr>
-<tr><td><kbd>password</kbd></td><td><kbd>string</kbd></td><td><i>The Password</i></td></tr>
+<tr>
+	<td><kbd>username</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Username</i></td>
+</tr>
+<tr>
+	<td><kbd>password</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Password</i></td>
+</tr>
 </table>
 
 
@@ -75,10 +83,26 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>action</kbd></td><td><kbd>string</kbd></td><td><i>The Action-URL</i></td></tr>
-<tr><td><kbd>data</kbd></td><td><kbd>array</kbd></td><td><i>The POST-Data for the Request</i></td></tr>
-<tr><td><kbd>headers</kbd></td><td><kbd>array</kbd></td><td><i>Additional Headers for the Request</i></td></tr>
-<tr><td><kbd>cookies</kbd></td><td><kbd>array</kbd></td><td><i>Additional Cookies for the Request</i></td></tr>
+<tr>
+	<td><kbd>action</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Action-URL</i></td>
+</tr>
+<tr>
+	<td><kbd>data</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>The POST-Data for the Request</i></td>
+</tr>
+<tr>
+	<td><kbd>headers</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>Additional Headers for the Request</i></td>
+</tr>
+<tr>
+	<td><kbd>cookies</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>Additional Cookies for the Request</i></td>
+</tr>
 </table>
 
 
@@ -102,8 +126,16 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>action</kbd></td><td><kbd>string</kbd></td><td><i>The Action-URL</i></td></tr>
-<tr><td><kbd>data</kbd></td><td><kbd>array</kbd></td><td><i>The POST-Data for the Request</i></td></tr>
+<tr>
+	<td><kbd>action</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Action-URL</i></td>
+</tr>
+<tr>
+	<td><kbd>data</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>The POST-Data for the Request</i></td>
+</tr>
 </table>
 
 
@@ -127,9 +159,21 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>action</kbd></td><td><kbd>string</kbd></td><td><i>The Action-URL</i></td></tr>
-<tr><td><kbd>data</kbd></td><td><kbd>array</kbd></td><td><i>The POST-Data for the Request</i></td></tr>
-<tr><td><kbd>headers</kbd></td><td><kbd>array</kbd></td><td><i>Additional Headers for the Request</i></td></tr>
+<tr>
+	<td><kbd>action</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Action-URL</i></td>
+</tr>
+<tr>
+	<td><kbd>data</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>The POST-Data for the Request</i></td>
+</tr>
+<tr>
+	<td><kbd>headers</kbd></td>
+	<td><kbd>array</kbd></td>
+	<td><i>Additional Headers for the Request</i></td>
+</tr>
 </table>
 
 
@@ -153,8 +197,16 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>username</kbd></td><td><kbd>string</kbd></td><td><i>The Username</i></td></tr>
-<tr><td><kbd>password</kbd></td><td><kbd>string</kbd></td><td><i>The Password</i></td></tr>
+<tr>
+	<td><kbd>username</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Username</i></td>
+</tr>
+<tr>
+	<td><kbd>password</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Password</i></td>
+</tr>
 </table>
 
 
@@ -175,8 +227,16 @@ Retrieves the domains entered in the name server and their IDs.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>limit</kbd></td><td><kbd>int</kbd></td><td><i>Maximum of domains in the list</i></td></tr>
-<tr><td><kbd>page</kbd></td><td><kbd>int</kbd></td><td><i>The page of the List</i></td></tr>
+<tr>
+	<td><kbd>limit</kbd></td>
+	<td><kbd>int</kbd></td>
+	<td><i>Maximum of domains in the list</i></td>
+</tr>
+<tr>
+	<td><kbd>page</kbd></td>
+	<td><kbd>int</kbd></td>
+	<td><i>The page of the List</i></td>
+</tr>
 </table>
 
 
@@ -197,7 +257,11 @@ Get the Domain data by the name.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
+<tr>
+	<td><kbd>name</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
 </table>
 
 
@@ -218,7 +282,11 @@ Get the unique ID of an Domain
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
+<tr>
+	<td><kbd>name</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
 </table>
 
 
@@ -239,9 +307,21 @@ Receives all DNS entries for a specific domain.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string|object</kbd></td><td><i>The Domain name or object</i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
-<tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The name of the record</i></td></tr>
+<tr>
+	<td><kbd>domain</kbd></td>
+	<td><kbd>string|object</kbd></td>
+	<td><i>The Domain name or object</i></td>
+</tr>
+<tr>
+	<td><kbd>type</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td>
+</tr>
+<tr>
+	<td><kbd>name</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The name of the record</i></td>
+</tr>
 </table>
 
 
@@ -262,9 +342,21 @@ Get a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string|object</kbd></td><td><i>The Domain name</i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
-<tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Record name</i></td></tr>
+<tr>
+	<td><kbd>domain</kbd></td>
+	<td><kbd>string|object</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
+<tr>
+	<td><kbd>type</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td>
+</tr>
+<tr>
+	<td><kbd>name</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record name</i></td>
+</tr>
 </table>
 
 
@@ -285,11 +377,31 @@ Update a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
-<tr><td><kbd>record</kbd></td><td><kbd>string</kbd></td><td><i>The Record object</i></td></tr>
-<tr><td><kbd>value</kbd></td><td><kbd>string</kbd></td><td><i>The new value of the Record</i></td></tr>
-<tr><td><kbd>prio</kbd></td><td><kbd>string</kbd></td><td><i>The new priority of the Record</i></td></tr>
-<tr><td><kbd>ttl</kbd></td><td><kbd>string</kbd></td><td><i>The new ttl of the Record</i></td></tr>
+<tr>
+	<td><kbd>domain</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
+<tr>
+	<td><kbd>record</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record object</i></td>
+</tr>
+<tr>
+	<td><kbd>value</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new value of the Record</i></td>
+</tr>
+<tr>
+	<td><kbd>prio</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new priority of the Record</i></td>
+</tr>
+<tr>
+	<td><kbd>ttl</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new ttl of the Record</i></td>
+</tr>
 </table>
 
 
@@ -309,12 +421,36 @@ Create a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
-<tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Record name</i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
-<tr><td><kbd>value</kbd></td><td><kbd>string</kbd></td><td><i>The new value of the Record</i></td></tr>
-<tr><td><kbd>prio</kbd></td><td><kbd>string</kbd></td><td><i>The new priority of the Record</i></td></tr>
-<tr><td><kbd>ttl</kbd></td><td><kbd>string</kbd></td><td><i>The new ttl of the Record</i></td></tr>
+<tr>
+	<td><kbd>domain</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
+<tr>
+	<td><kbd>name</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record name</i></td>
+</tr>
+<tr>
+	<td><kbd>type</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record type (<kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td>
+</tr>
+<tr>
+	<td><kbd>value</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new value of the Record</i></td>
+</tr>
+<tr>
+	<td><kbd>prio</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new priority of the Record</i></td>
+</tr>
+<tr>
+	<td><kbd>ttl</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The new ttl of the Record</i></td>
+</tr>
 </table>
 
 
@@ -335,8 +471,16 @@ Deletes a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
-<tr><td><kbd>record</kbd></td><td><kbd>string</kbd></td><td><i>The Record object</i></td></tr>
+<tr>
+	<td><kbd>domain</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Domain name</i></td>
+</tr>
+<tr>
+	<td><kbd>record</kbd></td>
+	<td><kbd>string</kbd></td>
+	<td><i>The Record object</i></td>
+</tr>
 </table>
 
 
