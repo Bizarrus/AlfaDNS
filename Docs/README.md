@@ -28,7 +28,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 > 🟢 [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
 > 
-> 🟢 [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
+> 🟢 [`getRecord(string|object : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
 > 
 > 🟢 [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
 > 
@@ -256,13 +256,13 @@ Get a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getRecord(string : $domain, string : $type = '*', string : $name);</pre>
+<pre lang="php">$dns->getRecord(string|object : $domain, string : $type = '*', string : $name);</pre>
 
 
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
+<tr><td><kbd>domain</kbd></td><td><kbd>string|object</kbd></td><td><i>The Domain name</i></td></tr>
 <tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
 <tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Record name</i></td></tr>
 </table>
