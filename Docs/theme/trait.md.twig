@@ -2,7 +2,6 @@
 {% block content %}
 ---
 title: {{ node.FullyQualifiedStructuralElementName }}
-{% include 'config/frontmatter.twig' %}
 ---
 
 # {{ node.name }}
@@ -47,7 +46,5 @@ title: {{ node.FullyQualifiedStructuralElementName }}
 {% for method in node.methods %}
 {% include 'method.md.twig' %}
 {% endfor %}
-
-{% include 'config/footer.md.twig' %}
 
 {% endblock %}

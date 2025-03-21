@@ -1,6 +1,5 @@
 {% import "include/macros.twig" as macros %}
 {% block content %}
-{% include 'config/frontmatter.twig' %}
 
 # {{ project.name|raw }}
 
@@ -54,5 +53,4 @@
 {% endif %}{# if classes, traits, interfaces length #}
 {% endfor %}{# for namespace #}
 
-{% include 'config/footer.md.twig' %}
 {% endblock %}
