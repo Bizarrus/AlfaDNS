@@ -148,9 +148,9 @@
 		  * @param string $action The Action-URL
 		  * @param array $data The POST-Data for the Request
 		  *
-		  * @return null|[ $headers, $document, $token ]
+		  * @return object | null
 		*/
-		private function ajax(string $action, array $data = null) : array {
+		private function ajax(string $action, array $data = null) : object | null {
 			list($headers, $request) = $this->call($action, $data, [
 				'Accept: application/json, text/javascript, */*; q=0.01',
 				'X-Requested-With: XMLHttpRequest'
