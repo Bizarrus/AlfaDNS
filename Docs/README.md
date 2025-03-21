@@ -52,6 +52,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 <hr />
 <h4>🟢 <a name="__construct" id="__construct">Constructor</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
@@ -72,6 +73,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="call" id="call">call</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 > [!IMPORTANT]
 > This method is **private**.
 Internal call HTTP Request
@@ -97,6 +99,7 @@ Internal call HTTP Request
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 > [!IMPORTANT]
 > This method is **private**.
 
@@ -120,6 +123,7 @@ Internal call HTTP Request
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="form" id="form">form</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 > [!IMPORTANT]
 > This method is **private**.
 
@@ -168,6 +172,7 @@ Internal call HTTP Request
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Retrieves the domains entered in the name server and their IDs.
 
 
@@ -189,6 +194,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get the Domain data by the name.
 
 
@@ -209,6 +215,7 @@ Get the Domain data by the name.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get the unique ID of an Domain
 
 
@@ -229,6 +236,7 @@ Get the unique ID of an Domain
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Receives all DNS entries for a specific domain.
 
 
@@ -251,6 +259,7 @@ Receives all DNS entries for a specific domain.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get a DNS record.
 
 
@@ -273,6 +282,7 @@ Get a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Update a DNS record.
 
 
@@ -296,6 +306,7 @@ Update a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="createrecord" id="createrecord">createRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Create a DNS record.
 
 
@@ -321,6 +332,7 @@ Create a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Deletes a DNS record.
 
 

@@ -2,8 +2,8 @@
 <hr />
 {% autoescape false %}
 <h4>{% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a></h4>
-{% if method.visibility == 'protected' %}
 <dl><dd><dl><dd><dl><dd><dl><dd>
+{% if method.visibility == 'protected' %}
 > [!IMPORTANT]
 > This method is **protected**.
 {% endif %}
