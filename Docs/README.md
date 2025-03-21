@@ -31,7 +31,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 ---
 ### <a name="__construct">
-```!php
+```php
 public __construct(string : $username, string : $password) : void
 ```
 </a>
@@ -55,7 +55,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 ---
 ### <a name="getDomains">
-```!php
+```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
 </a>
@@ -80,7 +80,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 ---
 ### <a name="getDomain">
-```!php
+```php
 public getDomain(string : $name) : object|null
 ```
 </a>
@@ -104,7 +104,7 @@ Get the Domain data by the name.
 
 ---
 ### <a name="getDomainID">
-```!php
+```php
 public getDomainID(string : $name) : int|null
 ```
 </a>
@@ -128,7 +128,7 @@ Get the unique ID of an Domain
 
 ---
 ### <a name="getRecords">
-```!php
+```php
 public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
 </a>
@@ -154,7 +154,7 @@ Receives all DNS entries for a specific domain.
 
 ---
 ### <a name="getRecord">
-```!php
+```php
 public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
 ```
 </a>
@@ -180,7 +180,7 @@ Get a DNS record.
 
 ---
 ### <a name="updateRecord">
-```!php
+```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
 </a>
@@ -207,7 +207,7 @@ Update a DNS record.
 
 ---
 ### <a name="createRecord">
-```!php
+```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
 </a>
@@ -236,7 +236,7 @@ Create a DNS record.
 
 ---
 ### <a name="deleteRecord">
-```!php
+```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
 </a>
