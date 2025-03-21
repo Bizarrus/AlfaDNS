@@ -19,12 +19,11 @@
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
+<pre lang="php">{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} ${{- argument.name }}{{- argument.default ? ' = ' ~ argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %});</pre>
-
 {% endautoescape %}
 
 {% if method.static %}* This method is **static**.{% endif %}

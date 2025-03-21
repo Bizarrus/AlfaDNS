@@ -57,8 +57,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns = new AlfaDNS(string : $username, string : $password);</pre>
-
+<pre lang="php">$dns = new AlfaDNS(string : $username, string : $password);</pre>
 
 
 #### Parameters
@@ -81,8 +80,7 @@ Internal call HTTP Request
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);</pre>
-
+<pre lang="php">$dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);</pre>
 
 
 #### Parameters
@@ -108,8 +106,7 @@ Internal call HTTP Request
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->ajax(string : $action, array : $data = null);</pre>
-
+<pre lang="php">$dns->ajax(string : $action, array : $data = null);</pre>
 
 
 #### Parameters
@@ -133,8 +130,7 @@ Internal call HTTP Request
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->form(string : $action, array : $data = null, array : $headers = []);</pre>
-
+<pre lang="php">$dns->form(string : $action, array : $data = null, array : $headers = []);</pre>
 
 
 #### Parameters
@@ -159,8 +155,7 @@ Internal call HTTP Request
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->login(string : $username, string : $password);</pre>
-
+<pre lang="php">$dns->login(string : $username, string : $password);</pre>
 
 
 #### Parameters
@@ -182,8 +177,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->getDomains(int : $limit = 10, int : $page = 1);</pre>
-
+<pre lang="php">$dns->getDomains(int : $limit = 10, int : $page = 1);</pre>
 
 
 #### Parameters
@@ -205,8 +199,7 @@ Get the Domain data by the name.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->getDomain(string : $name);</pre>
-
+<pre lang="php">$dns->getDomain(string : $name);</pre>
 
 
 #### Parameters
@@ -227,8 +220,7 @@ Get the unique ID of an Domain
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->getDomainID(string : $name);</pre>
-
+<pre lang="php">$dns->getDomainID(string : $name);</pre>
 
 
 #### Parameters
@@ -249,8 +241,7 @@ Receives all DNS entries for a specific domain.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');</pre>
-
+<pre lang="php">$dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');</pre>
 
 
 #### Parameters
@@ -273,8 +264,7 @@ Get a DNS record.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->getRecord(string : $domain, string : $type = '*', string : $name);</pre>
-
+<pre lang="php">$dns->getRecord(string : $domain, string : $type = '*', string : $name);</pre>
 
 
 #### Parameters
@@ -297,8 +287,7 @@ Update a DNS record.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);</pre>
-
+<pre lang="php">$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);</pre>
 
 
 #### Parameters
@@ -322,8 +311,7 @@ Create a DNS record.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60);</pre>
-
+<pre lang="php">$dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60);</pre>
 
 
 #### Parameters
@@ -349,8 +337,7 @@ Deletes a DNS record.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
 #### Usage
-<pre>$dns->deleteRecord(string : $domain, string : $record);</pre>
-
+<pre lang="php">$dns->deleteRecord(string : $domain, string : $record);</pre>
 
 
 #### Parameters
