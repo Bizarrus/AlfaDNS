@@ -11,23 +11,32 @@ This project was created because Alfahosting does not offer an interface for the
 
 ## Methods
 
-__construct
+`__construct();`
 
-getDomains
 
-getDomain
+`getDomains();`
 
-getDomainID
 
-getRecords
+`getDomain();`
 
-getRecord
 
-updateRecord
+`getDomainID();`
 
-createRecord
 
-deleteRecord
+`getRecords();`
+
+
+`getRecord();`
+
+
+`updateRecord();`
+
+
+`createRecord();`
+
+
+`deleteRecord();`
+
 
 ---
 ```php
