@@ -10,23 +10,23 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> :large_orange_diamond: [`__construct(string : $username, string : $password) : void`](#__construct)
+> :small_blue_diamond: [`__construct(string : $username, string : $password) : void`](#__construct)
 > 
-> :large_orange_diamond: [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
+> :small_blue_diamond: [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
-> :large_orange_diamond: [`getDomain(string : $name) : object|null`](#getdomain)
+> :small_blue_diamond: [`getDomain(string : $name) : object|null`](#getdomain)
 > 
-> :large_orange_diamond: [`getDomainID(string : $name) : int|null`](#getdomainid)
+> :small_blue_diamond: [`getDomainID(string : $name) : int|null`](#getdomainid)
 > 
-> :large_orange_diamond: [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
+> :small_blue_diamond: [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
 > 
-> :large_orange_diamond: [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
+> :small_blue_diamond: [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
 > 
-> :large_orange_diamond: [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
+> :small_blue_diamond: [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
 > 
-> :large_orange_diamond: [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
+> :small_blue_diamond: [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
 > 
-> :large_orange_diamond: [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
+> :small_blue_diamond: [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
 > 
 
 ---
