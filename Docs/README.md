@@ -129,7 +129,7 @@ Get the unique ID of an Domain
 ---
 ### <a name="getRecords">
 ```php
-public getRecords(string|object : $domain, string : $type = &amp;#039;*&amp;#039;, string|object : $name = &amp;#039;*&amp;#039;) : array
+public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
 </a>
 
@@ -155,7 +155,7 @@ Receives all DNS entries for a specific domain.
 ---
 ### <a name="getRecord">
 ```php
-public getRecord(string : $domain, string : $type = &amp;#039;*&amp;#039;, string : $name) : object|null
+public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
 ```
 </a>
 
