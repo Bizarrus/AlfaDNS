@@ -47,7 +47,7 @@
 ## Methods
 {% autoescape false %}
 {% for method in node.methods %}
-> {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} [`{{ method.name|raw }}({% for argument in method.arguments %}
+> {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} [`{% if method.name|raw == '__construct' %}TEST{% endif%}{{ method.name|raw }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}
