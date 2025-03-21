@@ -10,32 +10,23 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-\AlfaDNS\AlfaDNS::__construct()
-> [`__construct(string : $username, string : $password) : void`](#method_\AlfaDNS\AlfaDNS::__construct())
+> [`__construct(string : $username, string : $password) : void`](#method_<a href="__construct">__construct</a>)
 > 
-\AlfaDNS\AlfaDNS::getDomains()
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_\AlfaDNS\AlfaDNS::getDomains())
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_<a href="getDomains">getDomains</a>)
 > 
-\AlfaDNS\AlfaDNS::getDomain()
-> [`getDomain(string : $name) : object|null`](#method_\AlfaDNS\AlfaDNS::getDomain())
+> [`getDomain(string : $name) : object|null`](#method_<a href="getDomain">getDomain</a>)
 > 
-\AlfaDNS\AlfaDNS::getDomainID()
-> [`getDomainID(string : $name) : int|null`](#method_\AlfaDNS\AlfaDNS::getDomainID())
+> [`getDomainID(string : $name) : int|null`](#method_<a href="getDomainID">getDomainID</a>)
 > 
-\AlfaDNS\AlfaDNS::getRecords()
-> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_\AlfaDNS\AlfaDNS::getRecords())
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_<a href="getRecords">getRecords</a>)
 > 
-\AlfaDNS\AlfaDNS::getRecord()
-> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_\AlfaDNS\AlfaDNS::getRecord())
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_<a href="getRecord">getRecord</a>)
 > 
-\AlfaDNS\AlfaDNS::updateRecord()
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_\AlfaDNS\AlfaDNS::updateRecord())
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_<a href="updateRecord">updateRecord</a>)
 > 
-\AlfaDNS\AlfaDNS::createRecord()
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_\AlfaDNS\AlfaDNS::createRecord())
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_<a href="createRecord">createRecord</a>)
 > 
-\AlfaDNS\AlfaDNS::deleteRecord()
-> [`deleteRecord(string : $domain, string : $record) : void`](#method_\AlfaDNS\AlfaDNS::deleteRecord())
+> [`deleteRecord(string : $domain, string : $record) : void`](#method_<a href="deleteRecord">deleteRecord</a>)
 > 
 
 ---
