@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### <a name="method_{{ method.name }}_preview" id="method_{{ method.name }}_preview">
+### <a name="method_{{ method.name }}_preview" id="method_{{ method.name }}_preview">:heavy_minus_sign:</a>
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
@@ -11,7 +11,6 @@
 {{- method.response.type ? ' : '~method.response.type }}
 ```
 {% endautoescape %}
-</a>
 
 {% if method.static %}* This method is **static**.{% endif %}
 
