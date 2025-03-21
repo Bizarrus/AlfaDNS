@@ -10,31 +10,31 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> 🟢 [`$dns = new AlfaDNS($username, $password)`](#__construct)
+> 🟢 [`$dns = new AlfaDNS($username, $password);`](#__construct)
 > 
-> 🔴 [`$array = $dns->call($action, $data = null, $headers = [], $cookies = []) : array`](#call)
+> 🔴 [`$array = $dns->call($action, $data = null, $headers = [], $cookies = []);`](#call)
 > 
-> 🔴 [`$array = $dns->ajax($action, $data = null) : array`](#ajax)
+> 🔴 [`$array = $dns->ajax($action, $data = null);`](#ajax)
 > 
-> 🔴 [`$array = $dns->form($action, $data = null, $headers = []) : array`](#form)
+> 🔴 [`$array = $dns->form($action, $data = null, $headers = []);`](#form)
 > 
-> 🟠 [`$bool = $dns->login($username, $password) : bool`](#login)
+> 🟠 [`$bool = $dns->login($username, $password);`](#login)
 > 
-> 🟢 [`$array = $dns->getDomains($limit = 10, $page = 1) : array`](#getdomains)
+> 🟢 [`$array = $dns->getDomains($limit = 10, $page = 1);`](#getdomains)
 > 
-> 🟢 [`$data = $dns->getDomain($name) : object|null`](#getdomain)
+> 🟢 [`$data = $dns->getDomain($name);`](#getdomain)
 > 
-> 🟢 [`$data = $dns->getDomainID($name) : int|null`](#getdomainid)
+> 🟢 [`$data = $dns->getDomainID($name);`](#getdomainid)
 > 
-> 🟢 [`$array = $dns->getRecords($domain, $type = '*', $name = '*') : array`](#getrecords)
+> 🟢 [`$array = $dns->getRecords($domain, $type = '*', $name = '*');`](#getrecords)
 > 
-> 🟢 [`$data = $dns->getRecord($domain, $type = '*', $name) : object|null`](#getrecord)
+> 🟢 [`$data = $dns->getRecord($domain, $type = '*', $name);`](#getrecord)
 > 
-> 🟢 [`$dns->updateRecord($domain, $record, $value, $prio, $ttl = 60) : void`](#updaterecord)
+> 🟢 [`$dns->updateRecord($domain, $record, $value, $prio, $ttl = 60);`](#updaterecord)
 > 
-> 🟢 [`$mixed = $dns->createRecord($domain, $name, $type, $value, $prio, $ttl = 60) : mixed`](#createrecord)
+> 🟢 [`$mixed = $dns->createRecord($domain, $name, $type, $value, $prio, $ttl = 60);`](#createrecord)
 > 
-> 🟢 [`$dns->deleteRecord($domain, $record) : void`](#deleterecord)
+> 🟢 [`$dns->deleteRecord($domain, $record);`](#deleterecord)
 > 
 
 <hr />

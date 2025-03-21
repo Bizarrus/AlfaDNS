@@ -51,7 +51,7 @@
 {{- argument.byReference ? '&' }}$
 {{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
-{%- endfor %}){% if method.name|raw != '__construct' %}{{- method.response.type ? ' : '~method.response.type }}{% endif %}`](#{{ method.name|lower }})
+{%- endfor %});`](#{{ method.name|lower }})
 > 
 {% endfor %}
 {% endautoescape %}
