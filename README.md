@@ -8,7 +8,7 @@ This project was created because ![](https://raw.githubusercontent.com/Bizarrus/
 #### Original Webinterface
 ![AlfaDNS](https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/AlfaDNS.png?raw=true)
 
-# Support me! ![Sponsors](https://img.shields.io/github/sponsors/fruithost?style=social)
+# Support me!
 Donations are an important contribution to the development of OpenSource projects. With your donation you can help us to advance our project. Your support enables us to support the programming.
 
 Be a team-player, all feedbacks of our donations will have the priority. We will build the site for **YOU**!
