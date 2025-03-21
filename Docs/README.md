@@ -10,23 +10,14 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-
 [`__construct(string : $username, string : $password) : void`](#method-__construct)
-
 [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method-getDomains)
-
 [`getDomain(string : $name) : object|null`](#method-getDomain)
-
 [`getDomainID(string : $name) : int|null`](#method-getDomainID)
-
 [`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`](#method-getRecords)
-
 [`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`](#method-getRecord)
-
 [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method-updateRecord)
-
 [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method-createRecord)
-
 [`deleteRecord(string : $domain, string : $record) : void`](#method-deleteRecord)
 
 ---

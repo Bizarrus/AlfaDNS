@@ -46,7 +46,6 @@
 {% if node.methods|length > 0 %}
 ## Methods
 {% for method in node.methods %}
-
 [`{{ method.name|raw }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
