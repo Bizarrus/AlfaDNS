@@ -32,6 +32,10 @@ set -o errexit
 		color "\e[32m[OK]\e[39m Found phpDocumentor on: $PHPDOC"
 		color "\e[32m[OK]\e[39m Working on Directory: $WORKING_DIR"
 		
+		if [ $AUTO_UPLOAD = 1 ]; then
+			git pull
+		fi
+		
 		# Generate the Docs
 		php $PHPDOC run --template="$WORKING_DIR/Docs/theme" --cache-folder="$WORKING_DIR/tmp" --directory="$WORKING_DIR" --target="$WORKING_DIR/tmp/Docs"
 
@@ -41,7 +45,7 @@ set -o errexit
 		# Update Git
 		if [ $AUTO_UPLOAD = 1 ]; then
 			color "\e[32m[OK]\e[39m Uploading to Git"
-			git add . && git commit -m "Updating Docs" & git push
+			git add . && git commit -m "Updating Docs" && git push
 		fi
 	fi
 } # this ensures the entire script is downloaded #
