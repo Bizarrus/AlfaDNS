@@ -30,7 +30,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### :blue_diamond: <a name="__construct" id="__construct">__construct</a>
+### :large_blue_diamond: <a name="__construct" id="__construct">__construct</a>
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -53,7 +53,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### :blue_diamond: <a name="getdomains" id="getdomains">getDomains</a>
+### :large_blue_diamond: <a name="getdomains" id="getdomains">getDomains</a>
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -77,7 +77,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### :blue_diamond: <a name="getdomain" id="getdomain">getDomain</a>
+### :large_blue_diamond: <a name="getdomain" id="getdomain">getDomain</a>
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -100,7 +100,7 @@ Get the Domain data by the name.
 
 
 ---
-### :blue_diamond: <a name="getdomainid" id="getdomainid">getDomainID</a>
+### :large_blue_diamond: <a name="getdomainid" id="getdomainid">getDomainID</a>
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -123,7 +123,7 @@ Get the unique ID of an Domain
 
 
 ---
-### :blue_diamond: <a name="getrecords" id="getrecords">getRecords</a>
+### :large_blue_diamond: <a name="getrecords" id="getrecords">getRecords</a>
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -148,7 +148,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### :blue_diamond: <a name="getrecord" id="getrecord">getRecord</a>
+### :large_blue_diamond: <a name="getrecord" id="getrecord">getRecord</a>
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -173,7 +173,7 @@ Get a DNS record.
 
 
 ---
-### :blue_diamond: <a name="updaterecord" id="updaterecord">updateRecord</a>
+### :large_blue_diamond: <a name="updaterecord" id="updaterecord">updateRecord</a>
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -199,7 +199,7 @@ Update a DNS record.
 
 
 ---
-### :blue_diamond: <a name="createrecord" id="createrecord">createRecord</a>
+### :large_blue_diamond: <a name="createrecord" id="createrecord">createRecord</a>
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -227,7 +227,7 @@ Create a DNS record.
 
 
 ---
-### :blue_diamond: <a name="deleterecord" id="deleterecord">deleteRecord</a>
+### :large_blue_diamond: <a name="deleterecord" id="deleterecord">deleteRecord</a>
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
