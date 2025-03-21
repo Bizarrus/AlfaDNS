@@ -10,27 +10,27 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> [`__construct(string : $username, string : $password) : void`](#method_<a href="__construct"><abbr title="__construct">class:normal</abbr></a>)
+> [`__construct(string : $username, string : $password) : void`](#method___construct)
 > 
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_<a href="getDomains"><abbr title="getDomains">class:normal</abbr></a>)
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_getDomains)
 > 
-> [`getDomain(string : $name) : object|null`](#method_<a href="getDomain"><abbr title="getDomain">class:normal</abbr></a>)
+> [`getDomain(string : $name) : object|null`](#method_getDomain)
 > 
-> [`getDomainID(string : $name) : int|null`](#method_<a href="getDomainID"><abbr title="getDomainID">class:normal</abbr></a>)
+> [`getDomainID(string : $name) : int|null`](#method_getDomainID)
 > 
-> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_<a href="getRecords"><abbr title="getRecords">class:normal</abbr></a>)
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_getRecords)
 > 
-> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_<a href="getRecord"><abbr title="getRecord">class:normal</abbr></a>)
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_getRecord)
 > 
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_<a href="updateRecord"><abbr title="updateRecord">class:normal</abbr></a>)
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_updateRecord)
 > 
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_<a href="createRecord"><abbr title="createRecord">class:normal</abbr></a>)
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_createRecord)
 > 
-> [`deleteRecord(string : $domain, string : $record) : void`](#method_<a href="deleteRecord"><abbr title="deleteRecord">class:normal</abbr></a>)
+> [`deleteRecord(string : $domain, string : $record) : void`](#method_deleteRecord)
 > 
 
 ---
-### <a name="method_<a href="__construct"><abbr title="__construct">class:normal</abbr></a>">
+### <a name="method___construct">
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -54,7 +54,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="method_<a href="getDomains"><abbr title="getDomains">class:normal</abbr></a>">
+### <a name="method_getDomains">
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -79,7 +79,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="method_<a href="getDomain"><abbr title="getDomain">class:normal</abbr></a>">
+### <a name="method_getDomain">
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -103,7 +103,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="method_<a href="getDomainID"><abbr title="getDomainID">class:normal</abbr></a>">
+### <a name="method_getDomainID">
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -127,7 +127,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="method_<a href="getRecords"><abbr title="getRecords">class:normal</abbr></a>">
+### <a name="method_getRecords">
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -153,7 +153,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="method_<a href="getRecord"><abbr title="getRecord">class:normal</abbr></a>">
+### <a name="method_getRecord">
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -179,7 +179,7 @@ Get a DNS record.
 
 
 ---
-### <a name="method_<a href="updateRecord"><abbr title="updateRecord">class:normal</abbr></a>">
+### <a name="method_updateRecord">
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -206,7 +206,7 @@ Update a DNS record.
 
 
 ---
-### <a name="method_<a href="createRecord"><abbr title="createRecord">class:normal</abbr></a>">
+### <a name="method_createRecord">
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -235,7 +235,7 @@ Create a DNS record.
 
 
 ---
-### <a name="method_<a href="deleteRecord"><abbr title="deleteRecord">class:normal</abbr></a>">
+### <a name="method_deleteRecord">
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
