@@ -63,8 +63,8 @@ Authentication takes place via the Alfahosting DNS server account.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`username`</td><td>**string**</td><td>The Username</td></tr>
-<tr><td>`password`</td><td>**string**</td><td>The Password</td></tr>
+<tr><td><pre>username</pre></td><td>**string**</td><td>The Username</td></tr>
+<tr><td><pre>password</pre></td><td>**string**</td><td>The Password</td></tr>
 </table>
 
 
@@ -86,10 +86,10 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`action`</td><td>**string**</td><td>The Action-URL</td></tr>
-<tr><td>`data`</td><td>**array**</td><td>The POST-Data for the Request</td></tr>
-<tr><td>`headers`</td><td>**array**</td><td>Additional Headers for the Request</td></tr>
-<tr><td>`cookies`</td><td>**array**</td><td>Additional Cookies for the Request</td></tr>
+<tr><td><pre>action</pre></td><td>**string**</td><td>The Action-URL</td></tr>
+<tr><td><pre>data</pre></td><td>**array**</td><td>The POST-Data for the Request</td></tr>
+<tr><td><pre>headers</pre></td><td>**array**</td><td>Additional Headers for the Request</td></tr>
+<tr><td><pre>cookies</pre></td><td>**array**</td><td>Additional Cookies for the Request</td></tr>
 </table>
 
 
@@ -112,8 +112,8 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`action`</td><td>**string**</td><td>The Action-URL</td></tr>
-<tr><td>`data`</td><td>**array**</td><td>The POST-Data for the Request</td></tr>
+<tr><td><pre>action</pre></td><td>**string**</td><td>The Action-URL</td></tr>
+<tr><td><pre>data</pre></td><td>**array**</td><td>The POST-Data for the Request</td></tr>
 </table>
 
 
@@ -136,9 +136,9 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`action`</td><td>**string**</td><td>The Action-URL</td></tr>
-<tr><td>`data`</td><td>**array**</td><td>The POST-Data for the Request</td></tr>
-<tr><td>`headers`</td><td>**array**</td><td>Additional Headers for the Request</td></tr>
+<tr><td><pre>action</pre></td><td>**string**</td><td>The Action-URL</td></tr>
+<tr><td><pre>data</pre></td><td>**array**</td><td>The POST-Data for the Request</td></tr>
+<tr><td><pre>headers</pre></td><td>**array**</td><td>Additional Headers for the Request</td></tr>
 </table>
 
 
@@ -161,8 +161,8 @@ Internal call HTTP Request
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`username`</td><td>**string**</td><td>The Username</td></tr>
-<tr><td>`password`</td><td>**string**</td><td>The Password</td></tr>
+<tr><td><pre>username</pre></td><td>**string**</td><td>The Username</td></tr>
+<tr><td><pre>password</pre></td><td>**string**</td><td>The Password</td></tr>
 </table>
 
 
@@ -183,8 +183,8 @@ Retrieves the domains entered in the name server and their IDs.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`limit`</td><td>**int**</td><td>Maximum of domains in the list</td></tr>
-<tr><td>`page`</td><td>**int**</td><td>The page of the List</td></tr>
+<tr><td><pre>limit</pre></td><td>**int**</td><td>Maximum of domains in the list</td></tr>
+<tr><td><pre>page</pre></td><td>**int**</td><td>The page of the List</td></tr>
 </table>
 
 
@@ -205,7 +205,7 @@ Get the Domain data by the name.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`name`</td><td>**string**</td><td>The Domain name</td></tr>
+<tr><td><pre>name</pre></td><td>**string**</td><td>The Domain name</td></tr>
 </table>
 
 
@@ -226,7 +226,7 @@ Get the unique ID of an Domain
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`name`</td><td>**string**</td><td>The Domain name</td></tr>
+<tr><td><pre>name</pre></td><td>**string**</td><td>The Domain name</td></tr>
 </table>
 
 
@@ -247,9 +247,9 @@ Receives all DNS entries for a specific domain.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`domain`</td><td>**string|object**</td><td></td></tr>
-<tr><td>`type`</td><td>**string**</td><td>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
-<tr><td>`name`</td><td>**string|object**</td><td>The Domain name or object</td></tr>
+<tr><td><pre>domain</pre></td><td>**string|object**</td><td></td></tr>
+<tr><td><pre>type</pre></td><td>**string**</td><td>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
+<tr><td><pre>name</pre></td><td>**string|object**</td><td>The Domain name or object</td></tr>
 </table>
 
 
@@ -270,9 +270,9 @@ Get a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`domain`</td><td>**string**</td><td></td></tr>
-<tr><td>`type`</td><td>**string**</td><td>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
-<tr><td>`name`</td><td>**string**</td><td>The Record name</td></tr>
+<tr><td><pre>domain</pre></td><td>**string**</td><td></td></tr>
+<tr><td><pre>type</pre></td><td>**string**</td><td>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
+<tr><td><pre>name</pre></td><td>**string**</td><td>The Record name</td></tr>
 </table>
 
 
@@ -293,11 +293,11 @@ Update a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`domain`</td><td>**string**</td><td>The Domain name</td></tr>
-<tr><td>`record`</td><td>**string**</td><td>The Record object</td></tr>
-<tr><td>`value`</td><td>**string**</td><td>The new value of the Record</td></tr>
-<tr><td>`prio`</td><td>**string**</td><td>The new priority of the Record</td></tr>
-<tr><td>`ttl`</td><td>**string**</td><td>The new ttl of the Record</td></tr>
+<tr><td><pre>domain</pre></td><td>**string**</td><td>The Domain name</td></tr>
+<tr><td><pre>record</pre></td><td>**string**</td><td>The Record object</td></tr>
+<tr><td><pre>value</pre></td><td>**string**</td><td>The new value of the Record</td></tr>
+<tr><td><pre>prio</pre></td><td>**string**</td><td>The new priority of the Record</td></tr>
+<tr><td><pre>ttl</pre></td><td>**string**</td><td>The new ttl of the Record</td></tr>
 </table>
 
 
@@ -317,12 +317,12 @@ Create a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`domain`</td><td>**string**</td><td>The Domain name</td></tr>
-<tr><td>`name`</td><td>**string**</td><td>The Record name</td></tr>
-<tr><td>`type`</td><td>**string**</td><td>The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
-<tr><td>`value`</td><td>**string**</td><td>The new value of the Record</td></tr>
-<tr><td>`prio`</td><td>**string**</td><td>The new priority of the Record</td></tr>
-<tr><td>`ttl`</td><td>**string**</td><td>The new ttl of the Record</td></tr>
+<tr><td><pre>domain</pre></td><td>**string**</td><td>The Domain name</td></tr>
+<tr><td><pre>name</pre></td><td>**string**</td><td>The Record name</td></tr>
+<tr><td><pre>type</pre></td><td>**string**</td><td>The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</td></tr>
+<tr><td><pre>value</pre></td><td>**string**</td><td>The new value of the Record</td></tr>
+<tr><td><pre>prio</pre></td><td>**string**</td><td>The new priority of the Record</td></tr>
+<tr><td><pre>ttl</pre></td><td>**string**</td><td>The new ttl of the Record</td></tr>
 </table>
 
 
@@ -343,8 +343,8 @@ Deletes a DNS record.
 <h6>Parameters</h6>
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
-<tr><td>`domain`</td><td>**string**</td><td>The Domain name</td></tr>
-<tr><td>`record`</td><td>**string**</td><td>The Record object</td></tr>
+<tr><td><pre>domain</pre></td><td>**string**</td><td>The Domain name</td></tr>
+<tr><td><pre>record</pre></td><td>**string**</td><td>The Record object</td></tr>
 </table>
 
 
