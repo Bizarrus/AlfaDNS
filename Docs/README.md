@@ -10,31 +10,31 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> $dns = new AlfaDNS(string : $username, string : $password)`](#__construct)
+> 🟢 [`$dns = new AlfaDNS(string : $username, string : $password)`](#__construct)
 > 
-> $array = $dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
+> 🔴 [`$array = $dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
 > 
-> $array = $dns->ajax(string : $action, array : $data = null) : array`](#ajax)
+> 🔴 [`$array = $dns->ajax(string : $action, array : $data = null) : array`](#ajax)
 > 
-> $array = $dns->form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
+> 🔴 [`$array = $dns->form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
 > 
-> $bool = $dns->login(string : $username, string : $password) : bool`](#login)
+> 🟠 [`$bool = $dns->login(string : $username, string : $password) : bool`](#login)
 > 
-> $array = $dns->getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
+> 🟢 [`$array = $dns->getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
-> $data = $dns->getDomain(string : $name) : object|null`](#getdomain)
+> 🟢 [`$data = $dns->getDomain(string : $name) : object|null`](#getdomain)
 > 
-> $data = $dns->getDomainID(string : $name) : int|null`](#getdomainid)
+> 🟢 [`$data = $dns->getDomainID(string : $name) : int|null`](#getdomainid)
 > 
-> $array = $dns->getRecords(string|object : $domain, string : $type = '*', string : $name = '*') : array`](#getrecords)
+> 🟢 [`$array = $dns->getRecords(string|object : $domain, string : $type = '*', string : $name = '*') : array`](#getrecords)
 > 
-> $data = $dns->getRecord(string|object : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
+> 🟢 [`$data = $dns->getRecord(string|object : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
 > 
-> $dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
+> 🟢 [`$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
 > 
-> $mixed = $dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
+> 🟢 [`$mixed = $dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
 > 
-> $dns->deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
+> 🟢 [`$dns->deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
 > 
 
 <hr />
