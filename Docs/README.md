@@ -31,7 +31,6 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-#### Returns: `void`
 
 
 ---
@@ -172,7 +171,6 @@ Update a DNS record.
 
 
 
-#### Returns: `void`
 
 
 ---
@@ -222,7 +220,6 @@ Deletes a DNS record.
 
 
 
-#### Returns: `void`
 
 
 
