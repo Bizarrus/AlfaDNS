@@ -263,7 +263,7 @@ Get a DNS record.
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i></i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</i></td></tr>
+<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
 <tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Record name</i></td></tr>
 </table>
 
@@ -311,7 +311,7 @@ Create a DNS record.
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td><kbd>domain</kbd></td><td><kbd>string</kbd></td><td><i>The Domain name</i></td></tr>
 <tr><td><kbd>name</kbd></td><td><kbd>string</kbd></td><td><i>The Record name</i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</i></td></tr>
+<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (<kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)</i></td></tr>
 <tr><td><kbd>value</kbd></td><td><kbd>string</kbd></td><td><i>The new value of the Record</i></td></tr>
 <tr><td><kbd>prio</kbd></td><td><kbd>string</kbd></td><td><i>The new priority of the Record</i></td></tr>
 <tr><td><kbd>ttl</kbd></td><td><kbd>string</kbd></td><td><i>The new ttl of the Record</i></td></tr>
