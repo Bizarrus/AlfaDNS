@@ -61,7 +61,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 ---
 ```php
-public getDomain(string : $name) : object
+public getDomain(string : $name) : object|null
 ```
 
 
@@ -79,7 +79,7 @@ Get the Domain data by the name.
 
 
 
-#### Returns: `object`
+#### Returns: `object|null`
 
 
 ---

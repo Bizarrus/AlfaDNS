@@ -53,7 +53,7 @@
 		  *
 		  * @return [ $headers, $document, $token ]
 		*/
-		private function call($action, $data = null, $headers = [], $cookies = []) {
+		private function call($action, $data = null, $headers = [], $cookies = []) : array {
 			$request				= curl_init();
 			$headers				= array_merge([
 				sprintf('Cookie: %s',		http_build_query(array_merge($this->cookies, $cookies), '', ';')),
@@ -150,7 +150,7 @@
 		  *
 		  * @return null|[ $headers, $document, $token ]
 		*/
-		private function ajax($action, $data = null) {
+		private function ajax($action, $data = null) : array {
 			list($headers, $request) = $this->call($action, $data, [
 				'Accept: application/json, text/javascript, */*; q=0.01',
 				'X-Requested-With: XMLHttpRequest'
@@ -177,7 +177,7 @@
 		  *
 		  * @return [ $headers, $document, $token ]
 		*/
-		private function form($action, $data = null, $headers = []) {
+		private function form($action, $data = null, $headers = []) : array {
 			return $this->call($action, $data, array_merge([
 				'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
 				'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0'
@@ -194,7 +194,7 @@
 		  * @throws Exception
 		  * @return boolean
 		*/
-		protected function login($username, $password) {
+		protected function login($username, $password) : boolean {
 			list($headers, $document, $token) = $this->call('/site/login');
 			
 			if(empty($token)) {
@@ -237,7 +237,7 @@
 		  *
 		  * @return array
 		*/
-		public function getDomains($limit = 10, $page = 1) {
+		public function getDomains($limit = 10, $page = 1) : array {
 			$domains	= [];
 			$json		= $this->ajax(sprintf('/soa/index?%s', http_build_query([
 				'_search'	=> 'false',
@@ -265,9 +265,9 @@
 		  *
 		  * @param string $name The Domain name
 		  *
-		  * @return object
+		  * @return object | null
 		*/
-		public function getDomain($name) {
+		public function getDomain($name) : object | null {
 			$name		= trim(strtolower($name));
 			$domains	= $this->getDomains(9999999);
 			$domain		= null;
