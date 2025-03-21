@@ -150,7 +150,7 @@
 		  *
 		  * @return null|[ $headers, $document, $token ]
 		*/
-		private function ajax($action, $data = null) : array {
+		private function ajax(string $action, array $data = null) : array {
 			list($headers, $request) = $this->call($action, $data, [
 				'Accept: application/json, text/javascript, */*; q=0.01',
 				'X-Requested-With: XMLHttpRequest'
@@ -177,7 +177,7 @@
 		  *
 		  * @return [ $headers, $document, $token ]
 		*/
-		private function form($action, $data = null, $headers = []) : array {
+		private function form(string $action, array $data = null, array $headers = []) : array {
 			return $this->call($action, $data, array_merge([
 				'Content-Type: application/x-www-form-urlencoded; charset=UTF-8',
 				'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:136.0) Gecko/20100101 Firefox/136.0'
@@ -194,7 +194,7 @@
 		  * @throws Exception
 		  * @return boolean
 		*/
-		protected function login($username, $password) : boolean {
+		protected function login(string $username, string $password) : boolean {
 			list($headers, $document, $token) = $this->call('/site/login');
 			
 			if(empty($token)) {
@@ -237,7 +237,7 @@
 		  *
 		  * @return array
 		*/
-		public function getDomains($limit = 10, $page = 1) : array {
+		public function getDomains(int $limit = 10, int $page = 1) : array {
 			$domains	= [];
 			$json		= $this->ajax(sprintf('/soa/index?%s', http_build_query([
 				'_search'	=> 'false',
@@ -267,7 +267,7 @@
 		  *
 		  * @return object | null
 		*/
-		public function getDomain($name) : object | null {
+		public function getDomain(string $name) : object | null {
 			$name		= trim(strtolower($name));
 			$domains	= $this->getDomains(9999999);
 			$domain		= null;
@@ -292,10 +292,16 @@
 		  *
 		  * @param string $name The Domain name
 		  *
-		  * @return int
+		  * @return int | null
 		*/
-		public function getDomainID($name) {
-			return $this->getDomain($name)->id;
+		public function getDomainID(string $name) : int | null {
+			$domain = $this->getDomain($name);
+			
+			if(empty($domain)) {
+				return null;
+			}
+			
+			return $domain->id;
 		}
 		
 		/**
@@ -304,12 +310,12 @@
 		  * @method array getRecords(string $domain, string $type, string $name)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Records.md Receives all DNS entries for a specific domain.
 		  *
-		  * @param string $name The Domain name
-		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  * @param string | object $name The Domain name or object
+		  * @param string $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  *
 		  * @return array
 		*/
-		public function getRecords($domain, $type = '*', $name = '*') {
+		public function getRecords(string | object $domain, string $type = '*', string $name = '*') : array {
 			if(is_string($domain)) {
 				$domain = $this->getDomainID($domain);
 			}

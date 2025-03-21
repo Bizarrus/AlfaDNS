@@ -84,7 +84,7 @@ Get the Domain data by the name.
 
 ---
 ```php
-public getDomainID(string : $name) : int
+public getDomainID(string : $name) : int|null
 ```
 
 
@@ -102,12 +102,12 @@ Get the unique ID of an Domain
 
 
 
-#### Returns: `int`
+#### Returns: `int|null`
 
 
 ---
 ```php
-public getRecords(mixed : $domain, string : $type = &#039;*&#039;, string : $name = &#039;*&#039;) : array
+public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
 
 
@@ -121,9 +121,9 @@ Receives all DNS entries for a specific domain.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `domain` | **mixed** |  |
-| `type` | **string** | The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT) |
-| `name` | **string** | The Domain name |
+| `domain` | **string|object** |  |
+| `type` | **string** | The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`) |
+| `name` | **string|object** | The Domain name or object |
 
 
 
