@@ -35,7 +35,7 @@
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 {% for argument in method.arguments %}
-<tr><td><pre>{{ argument.name }}</pre></td><td><strong>{{ argument.type ? argument.type|raw }}</strong></td><td><i>{{ argument.description|replace({'|': '&#124;'})|nl2br|replace({"\n": "", "\r": "", "\t": ""})|raw }}</i></td></tr>
+<tr><td><kde>{{ argument.name }}</kde></td><td><strong>{{ argument.type ? argument.type|raw }}</strong></td><td><i>{{ argument.description|replace({'|': '&#124;'})|nl2br|replace({"\n": "", "\r": "", "\t": ""})|raw }}</i></td></tr>
 {% endfor %}
 </table>
 
