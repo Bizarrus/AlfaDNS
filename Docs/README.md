@@ -56,12 +56,11 @@ The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns = new AlfaDNS(string : $username, string : $password);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `username` | **string** | The Username |
@@ -79,12 +78,11 @@ Internal call HTTP Request
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `action` | **string** | The Action-URL |
@@ -94,7 +92,7 @@ Internal call HTTP Request
 
 
 
-#### Returns: `array`
+<h6>Returns: `array`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -105,12 +103,11 @@ Internal call HTTP Request
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->ajax(string : $action, array : $data = null);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `action` | **string** | The Action-URL |
@@ -118,7 +115,7 @@ Internal call HTTP Request
 
 
 
-#### Returns: `array`
+<h6>Returns: `array`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -129,12 +126,11 @@ Internal call HTTP Request
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->form(string : $action, array : $data = null, array : $headers = []);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `action` | **string** | The Action-URL |
@@ -143,7 +139,7 @@ Internal call HTTP Request
 
 
 
-#### Returns: `array`
+<h6>Returns: `array`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -154,12 +150,11 @@ Internal call HTTP Request
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->login(string : $username, string : $password);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `username` | **string** | The Username |
@@ -167,7 +162,7 @@ Internal call HTTP Request
 
 
 
-#### Returns: `bool`
+<h6>Returns: `bool`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -176,12 +171,11 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->getDomains(int : $limit = 10, int : $page = 1);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `limit` | **int** | Maximum of domains in the list |
@@ -189,7 +183,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-#### Returns: `array`
+<h6>Returns: `array`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -198,19 +192,18 @@ Get the Domain data by the name.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->getDomain(string : $name);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `name` | **string** | The Domain name |
 
 
 
-#### Returns: `object|null`
+<h6>Returns: `object|null`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -219,19 +212,18 @@ Get the unique ID of an Domain
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->getDomainID(string : $name);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `name` | **string** | The Domain name |
 
 
 
-#### Returns: `int|null`
+<h6>Returns: `int|null`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -240,12 +232,11 @@ Receives all DNS entries for a specific domain.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `domain` | **string|object** |  |
@@ -254,7 +245,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-#### Returns: `array`
+<h6>Returns: `array`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -263,12 +254,11 @@ Get a DNS record.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->getRecord(string : $domain, string : $type = '*', string : $name);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `domain` | **string** |  |
@@ -277,7 +267,7 @@ Get a DNS record.
 
 
 
-#### Returns: `object|null`
+<h6>Returns: `object|null`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -286,12 +276,11 @@ Update a DNS record.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `domain` | **string** | The Domain name |
@@ -310,12 +299,11 @@ Create a DNS record.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `domain` | **string** | The Domain name |
@@ -327,7 +315,7 @@ Create a DNS record.
 
 
 
-#### Returns: `mixed`
+<h6>Returns: `mixed`</h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl>---
@@ -336,12 +324,11 @@ Deletes a DNS record.
 
 
 <dl><dd><dl><dd><dl><dd><dl><dd>
-#### Usage
+<h6>Usage</h6>
 <pre lang="php">$dns->deleteRecord(string : $domain, string : $record);</pre>
 
 
-#### Parameters
-
+<h6>Parameters</h6>
 | Parameter | Type | Description |
 |-----------|------|-------------|
 | `domain` | **string** | The Domain name |
