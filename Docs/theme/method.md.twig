@@ -1,6 +1,6 @@
 {# Method signature #}
 ---
-### <a name="method-{{ method.name|raw }}"></a> {{ method.name|raw }}
+### <a name="method-{{ method.name|raw }}">{{ method.name|raw }}</a>
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 

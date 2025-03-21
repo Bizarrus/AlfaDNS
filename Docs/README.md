@@ -30,7 +30,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### <a name="method-__construct"></a> __construct
+### <a name="method-__construct">__construct</a>
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -53,7 +53,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="method-getDomains"></a> getDomains
+### <a name="method-getDomains">getDomains</a>
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -77,7 +77,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="method-getDomain"></a> getDomain
+### <a name="method-getDomain">getDomain</a>
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -100,7 +100,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="method-getDomainID"></a> getDomainID
+### <a name="method-getDomainID">getDomainID</a>
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -123,7 +123,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="method-getRecords"></a> getRecords
+### <a name="method-getRecords">getRecords</a>
 ```php
 public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
@@ -148,7 +148,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="method-getRecord"></a> getRecord
+### <a name="method-getRecord">getRecord</a>
 ```php
 public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
 ```
@@ -173,7 +173,7 @@ Get a DNS record.
 
 
 ---
-### <a name="method-updateRecord"></a> updateRecord
+### <a name="method-updateRecord">updateRecord</a>
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -199,7 +199,7 @@ Update a DNS record.
 
 
 ---
-### <a name="method-createRecord"></a> createRecord
+### <a name="method-createRecord">createRecord</a>
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -227,7 +227,7 @@ Create a DNS record.
 
 
 ---
-### <a name="method-deleteRecord"></a> deleteRecord
+### <a name="method-deleteRecord">deleteRecord</a>
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
