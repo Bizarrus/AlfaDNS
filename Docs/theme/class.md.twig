@@ -54,7 +54,6 @@
 {%- if not loop.last %}, {% endif %}
 {%- endfor %})
 {{- method.response.type ? ' : '~method.response.type }}`](#method-{{ method.name|raw }})
-
 {% endfor %}
 
 {% for method in node.methods %}
