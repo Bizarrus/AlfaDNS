@@ -14,10 +14,10 @@
 > [!WARNING]
 > This method is **deprecated**. This means that this method will likely be removed in a future version.
 {% endif %}
+<dl><dd><dl><dd><dl><dd><dl><dd>
 {{ method.summary|raw }}
 {{ method.description|raw }}
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
 {{- argument.type }} : 

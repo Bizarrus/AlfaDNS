@@ -52,10 +52,10 @@ This project was created because Alfahosting does not offer an interface for the
 
 <hr />
 <h4>🟢 <a name="__construct" id="__construct">Constructor</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns = new AlfaDNS(string : $username, string : $password);</pre>
 
@@ -75,10 +75,10 @@ Authentication takes place via the Alfahosting DNS server account.
 <h4>🔴 <a name="call" id="call">call</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Internal call HTTP Request
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);</pre>
 
@@ -101,10 +101,10 @@ Internal call HTTP Request
 <h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
-
-
-
 <dl><dd><dl><dd><dl><dd><dl><dd>
+
+
+
 <h6>Usage</h6>
 <pre lang="php">$dns->ajax(string : $action, array : $data = null);</pre>
 
@@ -125,10 +125,10 @@ Internal call HTTP Request
 <h4>🔴 <a name="form" id="form">form</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
-
-
-
 <dl><dd><dl><dd><dl><dd><dl><dd>
+
+
+
 <h6>Usage</h6>
 <pre lang="php">$dns->form(string : $action, array : $data = null, array : $headers = []);</pre>
 
@@ -150,10 +150,10 @@ Internal call HTTP Request
 <h4>🟠 <a name="login" id="login">login</a></h4>
 > [!IMPORTANT]
 > This method is **protected**.
-
-
-
 <dl><dd><dl><dd><dl><dd><dl><dd>
+
+
+
 <h6>Usage</h6>
 <pre lang="php">$dns->login(string : $username, string : $password);</pre>
 
@@ -172,10 +172,10 @@ Internal call HTTP Request
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Retrieves the domains entered in the name server and their IDs.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->getDomains(int : $limit = 10, int : $page = 1);</pre>
 
@@ -194,10 +194,10 @@ Retrieves the domains entered in the name server and their IDs.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get the Domain data by the name.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->getDomain(string : $name);</pre>
 
@@ -215,10 +215,10 @@ Get the Domain data by the name.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get the unique ID of an Domain
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->getDomainID(string : $name);</pre>
 
@@ -236,10 +236,10 @@ Get the unique ID of an Domain
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Receives all DNS entries for a specific domain.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');</pre>
 
@@ -259,10 +259,10 @@ Receives all DNS entries for a specific domain.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Get a DNS record.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->getRecord(string : $domain, string : $type = '*', string : $name);</pre>
 
@@ -282,10 +282,10 @@ Get a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Update a DNS record.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);</pre>
 
@@ -306,10 +306,10 @@ Update a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="createrecord" id="createrecord">createRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Create a DNS record.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60);</pre>
 
@@ -332,10 +332,10 @@ Create a DNS record.
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
+<dl><dd><dl><dd><dl><dd><dl><dd>
 Deletes a DNS record.
 
 
-<dl><dd><dl><dd><dl><dd><dl><dd>
 <h6>Usage</h6>
 <pre lang="php">$dns->deleteRecord(string : $domain, string : $record);</pre>
 
