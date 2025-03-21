@@ -12,6 +12,8 @@ This project was created because Alfahosting does not offer an interface for the
 ## Methods
 
 
+
+---
 ```php
 public AlfaDNS::__construct(string $username, string $password): mixed
 ```
@@ -37,8 +39,8 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::getDomains(int $limit = 10, int $page = 1): array
 ```
@@ -64,8 +66,8 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::getDomain(string $name): object
 ```
@@ -90,8 +92,8 @@ Get the Domain data by the name.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::getDomainID(string $name): int
 ```
@@ -116,8 +118,8 @@ Get the unique ID of an Domain
 
 
 
----
 
+---
 ```php
 public AlfaDNS::getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
 ```
@@ -144,8 +146,8 @@ Receives all DNS entries for a specific domain.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
 ```
@@ -172,8 +174,8 @@ Get a DNS record.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
 ```
@@ -202,8 +204,8 @@ Update a DNS record.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
 ```
@@ -233,8 +235,8 @@ Create a DNS record.
 
 
 
----
 
+---
 ```php
 public AlfaDNS::deleteRecord(string $domain, string $record): mixed
 ```
@@ -259,7 +261,5 @@ Deletes a DNS record.
 
 
 
-
----
 
 
