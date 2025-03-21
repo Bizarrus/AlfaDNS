@@ -10,31 +10,43 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> 🟢 [`new AlfaDNS(string : $username, string : $password) : void`](#__construct)
+> 🟢 [`new AlfaDNS(string : $username, string : $password)
 > 
-> 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
+> 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = [])
+ : array`](#call)
 > 
-> 🔴 [`ajax(string : $action, array : $data = null) : array`](#ajax)
+> 🔴 [`ajax(string : $action, array : $data = null)
+ : array`](#ajax)
 > 
-> 🔴 [`form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
+> 🔴 [`form(string : $action, array : $data = null, array : $headers = [])
+ : array`](#form)
 > 
-> 🟠 [`login(string : $username, string : $password) : bool`](#login)
+> 🟠 [`login(string : $username, string : $password)
+ : bool`](#login)
 > 
-> 🟢 [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
+> 🟢 [`getDomains(int : $limit = 10, int : $page = 1)
+ : array`](#getdomains)
 > 
-> 🟢 [`getDomain(string : $name) : object|null`](#getdomain)
+> 🟢 [`getDomain(string : $name)
+ : object|null`](#getdomain)
 > 
-> 🟢 [`getDomainID(string : $name) : int|null`](#getdomainid)
+> 🟢 [`getDomainID(string : $name)
+ : int|null`](#getdomainid)
 > 
-> 🟢 [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
+> 🟢 [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*')
+ : array`](#getrecords)
 > 
-> 🟢 [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
+> 🟢 [`getRecord(string : $domain, string : $type = '*', string : $name)
+ : object|null`](#getrecord)
 > 
-> 🟢 [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
+> 🟢 [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60)
+ : void`](#updaterecord)
 > 
-> 🟢 [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
+> 🟢 [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60)
+ : mixed`](#createrecord)
 > 
-> 🟢 [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
+> 🟢 [`deleteRecord(string : $domain, string : $record)
+ : void`](#deleterecord)
 > 
 
 ---
