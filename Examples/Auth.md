@@ -11,6 +11,6 @@ Authentication takes place via the ![](https://raw.githubusercontent.com/Bizarru
 # Example
 A Full Example can be found on [Auth.php](Auth.php).
 
-```!php
+```php
 $dns = new AlfaDNS('<username>', '<password>');
 ```
