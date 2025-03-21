@@ -1,7 +1,7 @@
 # ACME: Renewal
 Renewal Certificate with ACME challenge DNS entries for a specific domain.
 
-I recommend the library [GitHub: skoerfgen/ACMECert](https://github.com/skoerfgen/ACMECert), if you want to request `Let's Encrypt` certificates via ACME challenges over DNS.
+I recommend the library [:octocat:`skoerfgen/ACMECert`](https://github.com/skoerfgen/ACMECert), if you want to request `Let's Encrypt` certificates via ACME challenges over DNS.
 
 # Example
 A Full Example can be found on [ACME.Renewal.php](ACME.Renewal.php).
