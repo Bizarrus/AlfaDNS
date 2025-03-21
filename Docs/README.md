@@ -52,8 +52,6 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="getdomains" id="getdomains">getDomains</a>
 ```php
@@ -78,8 +76,6 @@ Retrieves the domains entered in the name server and their IDs.
 #### Returns: `array`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="getdomain" id="getdomain">getDomain</a>
 ```php
@@ -103,8 +99,6 @@ Get the Domain data by the name.
 #### Returns: `object|null`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="getdomainid" id="getdomainid">getDomainID</a>
 ```php
@@ -128,8 +122,6 @@ Get the unique ID of an Domain
 #### Returns: `int|null`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="getrecords" id="getrecords">getRecords</a>
 ```php
@@ -155,8 +147,6 @@ Receives all DNS entries for a specific domain.
 #### Returns: `array`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="getrecord" id="getrecord">getRecord</a>
 ```php
@@ -182,8 +172,6 @@ Get a DNS record.
 #### Returns: `object|null`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="updaterecord" id="updaterecord">updateRecord</a>
 ```php
@@ -210,8 +198,6 @@ Update a DNS record.
 
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="createrecord" id="createrecord">createRecord</a>
 ```php
@@ -240,8 +226,6 @@ Create a DNS record.
 #### Returns: `mixed`
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 ---
 ### :large_blue_diamond: <a name="deleterecord" id="deleterecord">deleteRecord</a>
 ```php
@@ -265,7 +249,5 @@ Deletes a DNS record.
 
 
 
-
-<a href="README.md">:small_red_triangle:</a>
 
 
