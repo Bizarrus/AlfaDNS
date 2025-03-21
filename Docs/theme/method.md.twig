@@ -19,10 +19,8 @@
 {% if method.final %}* This method is **final**.{% endif %}
 
 {% if method.visibility == 'protected' %}
-{% if method.deprecated %}
 > [!WARNING]
 > 🟠 This method is **protected**.
-{% endif %}
 {% endif %}
 {% if method.visibility == 'private' %}
 > [!WARNING]

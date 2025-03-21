@@ -160,6 +160,8 @@ $dns->login(string : $username, string : $password);
 ```
 
 
+> [!WARNING]
+> 🟠 This method is **protected**.
 
 #### Parameters
 
