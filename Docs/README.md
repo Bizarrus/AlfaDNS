@@ -132,7 +132,7 @@ Receives all DNS entries for a specific domain.
 
 ---
 ```php
-public getRecord(mixed : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
+public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
 ```
 
 
@@ -146,8 +146,8 @@ Get a DNS record.
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
-| `domain` | **mixed** |  |
-| `type` | **string** | The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT) |
+| `domain` | **string** |  |
+| `type` | **string** | The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`) |
 | `name` | **string** | The Record name |
 
 
@@ -157,7 +157,7 @@ Get a DNS record.
 
 ---
 ```php
-public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : mixed
+public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
 
 
@@ -179,7 +179,7 @@ Update a DNS record.
 
 
 
-#### Returns: `mixed`
+#### Returns: `void`
 
 
 ---
@@ -200,7 +200,7 @@ Create a DNS record.
 |-----------|------|-------------|
 | `domain` | **string** | The Domain name |
 | `name` | **string** | The Record name |
-| `type` | **string** | The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT) |
+| `type` | **string** | The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`) |
 | `value` | **string** | The new value of the Record |
 | `prio` | **string** | The new priority of the Record |
 | `ttl` | **string** | The new ttl of the Record |
@@ -212,7 +212,7 @@ Create a DNS record.
 
 ---
 ```php
-public deleteRecord(string : $domain, string : $record) : mixed
+public deleteRecord(string : $domain, string : $record) : void
 ```
 
 
@@ -231,7 +231,7 @@ Deletes a DNS record.
 
 
 
-#### Returns: `mixed`
+#### Returns: `void`
 
 
 

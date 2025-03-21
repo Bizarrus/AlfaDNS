@@ -356,12 +356,12 @@
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Record.Get.md Get a DNS record.
 		  *
 		  * @param string $name The Domain name
-		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  * @param string $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  * @param string $name The Record name
 		  *
 		  * @return object|null
 		*/
-		public function getRecord($domain, $type = '*', $name) {
+		public function getRecord(string $domain, string $type = '*', string $name) : object | null {
 			$records	= $this->getRecords($domain, $type, $name);
 			$record		= null;
 			
@@ -392,7 +392,7 @@
 		  * @param string $prio The new priority of the Record
 		  * @param string $ttl The new ttl of the Record
 		*/
-		public function updateRecord($domain, $record, $value, $prio = 0, $ttl = 60) {
+		public function updateRecord(string $domain, object $record, string $value, int $prio = 0, int $ttl = 60) : void {
 			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $this->getDomainID($domain)), [
 				'id'				=> $record->id,
 				'type'				=> $record->type,
@@ -414,12 +414,12 @@
 		  *
 		  * @param string $domain The Domain name
 		  * @param string $name The Record name
-		  * @param string $type The Record type (*, A, AAAA, CNAME, HINFO, MX, NAPTR, NS, RP, SRV, TXT)
+		  * @param string $type The Record type (`A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  * @param string $value The new value of the Record
 		  * @param string $prio The new priority of the Record
 		  * @param string $ttl The new ttl of the Record
 		*/
-		public function createRecord($domain, $name, $type, $value, $prio = 0, $ttl = 60) {
+		public function createRecord(string $domain, string $name, string $type, string $value, int $prio = 0, int $ttl = 60) {
 			$domain_id							= $this->getDomainID($domain);
 			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $domain_id), [
 				'id'				=> 'new',
@@ -443,7 +443,7 @@
 		  * @param string $domain The Domain name
 		  * @param string $record The Record object
 		*/
-		public function deleteRecord($domain, $record) {
+		public function deleteRecord(string $domain, object $record) : void {
 			$domain_id							= $this->getDomainID($domain);
 			
 			list($headers, $document, $token)	= $this->form(sprintf('/rr/record/soa/%d', $domain_id), [
