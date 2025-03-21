@@ -6,7 +6,7 @@ I recommend the library [GitHub: skoerfgen/ACMECert](https://github.com/skoerfge
 # Example
 A Full Example can be found on [ACME.Renewal.php](ACME.Renewal.php).
 
-```!php
+```php
 $domain		= 'example.com';
 $days		= 5; // When should the certificate be renewed?
 $test		= true; // DEMO-Mode on Let's Encrypt
@@ -133,7 +133,7 @@ $emails		= [
 ```
 
 # Result
-```
+```python
 Create Account with E-Mails: [abuse@example.com]
 Registering account
 Initializing ACME v2 environment: https://acme-staging-v02.api.letsencrypt.org/directory
