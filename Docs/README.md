@@ -54,13 +54,13 @@ This project was created because Alfahosting does not offer an interface for the
 ### 🟢 <a name="__construct" id="__construct">Constructor</a>
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns = new AlfaDNS(string : $username, string : $password);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -77,13 +77,13 @@ $dns = new AlfaDNS(string : $username, string : $password);
 > This method is **private**.
 Internal call HTTP Request
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -94,7 +94,7 @@ $dns->call(string : $action, array : $data = null, array : $headers = [], array 
 
 
 
-#### Returns: `array`
+#### $~~~~~~~~~~~$ Returns: `array`
 
 
 ---
@@ -103,13 +103,13 @@ $dns->call(string : $action, array : $data = null, array : $headers = [], array 
 > This method is **private**.
 
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->ajax(string : $action, array : $data = null);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -118,7 +118,7 @@ $dns->ajax(string : $action, array : $data = null);
 
 
 
-#### Returns: `array`
+#### $~~~~~~~~~~~$ Returns: `array`
 
 
 ---
@@ -127,13 +127,13 @@ $dns->ajax(string : $action, array : $data = null);
 > This method is **private**.
 
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->form(string : $action, array : $data = null, array : $headers = []);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -143,7 +143,7 @@ $dns->form(string : $action, array : $data = null, array : $headers = []);
 
 
 
-#### Returns: `array`
+#### $~~~~~~~~~~~$ Returns: `array`
 
 
 ---
@@ -152,13 +152,13 @@ $dns->form(string : $action, array : $data = null, array : $headers = []);
 > This method is **protected**.
 
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->login(string : $username, string : $password);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -167,20 +167,20 @@ $dns->login(string : $username, string : $password);
 
 
 
-#### Returns: `bool`
+#### $~~~~~~~~~~~$ Returns: `bool`
 
 
 ---
 ### 🟢 <a name="getdomains" id="getdomains">getDomains</a>
 Retrieves the domains entered in the name server and their IDs.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->getDomains(int : $limit = 10, int : $page = 1);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -189,20 +189,20 @@ $dns->getDomains(int : $limit = 10, int : $page = 1);
 
 
 
-#### Returns: `array`
+#### $~~~~~~~~~~~$ Returns: `array`
 
 
 ---
 ### 🟢 <a name="getdomain" id="getdomain">getDomain</a>
 Get the Domain data by the name.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->getDomain(string : $name);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -210,20 +210,20 @@ $dns->getDomain(string : $name);
 
 
 
-#### Returns: `object|null`
+#### $~~~~~~~~~~~$ Returns: `object|null`
 
 
 ---
 ### 🟢 <a name="getdomainid" id="getdomainid">getDomainID</a>
 Get the unique ID of an Domain
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->getDomainID(string : $name);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -231,20 +231,20 @@ $dns->getDomainID(string : $name);
 
 
 
-#### Returns: `int|null`
+#### $~~~~~~~~~~~$ Returns: `int|null`
 
 
 ---
 ### 🟢 <a name="getrecords" id="getrecords">getRecords</a>
 Receives all DNS entries for a specific domain.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*');
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -254,20 +254,20 @@ $dns->getRecords(string|object : $domain, string : $type = '*', string|object : 
 
 
 
-#### Returns: `array`
+#### $~~~~~~~~~~~$ Returns: `array`
 
 
 ---
 ### 🟢 <a name="getrecord" id="getrecord">getRecord</a>
 Get a DNS record.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->getRecord(string : $domain, string : $type = '*', string : $name);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -277,20 +277,20 @@ $dns->getRecord(string : $domain, string : $type = '*', string : $name);
 
 
 
-#### Returns: `object|null`
+#### $~~~~~~~~~~~$ Returns: `object|null`
 
 
 ---
 ### 🟢 <a name="updaterecord" id="updaterecord">updateRecord</a>
 Update a DNS record.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -308,13 +308,13 @@ $dns->updateRecord(string : $domain, string : $record, string : $value, string :
 ### 🟢 <a name="createrecord" id="createrecord">createRecord</a>
 Create a DNS record.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -327,20 +327,20 @@ $dns->createRecord(string : $domain, string : $name, string : $type, string : $v
 
 
 
-#### Returns: `mixed`
+#### $~~~~~~~~~~~$ Returns: `mixed`
 
 
 ---
 ### 🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a>
 Deletes a DNS record.
 
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 $dns->deleteRecord(string : $domain, string : $record);
 ```
 
 
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|

@@ -16,7 +16,7 @@
 {% endif %}
 {{ method.summary|raw }}
 {{ method.description|raw }}
-#### Usage
+#### $~~~~~~~~~~~$ Usage
 ```php
 {% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
 {{- argument.type }} : 
@@ -31,7 +31,7 @@
 {% if method.final %}* This method is **final**.{% endif %}
 
 {% if method.arguments is not empty %}
-#### Parameters
+#### $~~~~~~~~~~~$ Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -44,7 +44,7 @@
 {% if method.response.description %}
 
 {%if method.response.type|replace({'void': ''})|raw%}
-#### Returns: `{{ method.response.type|raw }}`
+#### $~~~~~~~~~~~$ Returns: `{{ method.response.type|raw }}`
 {% endif %}
 
 {% endif %}
