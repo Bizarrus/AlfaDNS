@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a>
+### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}$dns->{{ method.name }}{% endif %}</a>
 ```php
 {% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}{% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}{% endif %}({% for argument in method.arguments %}
 {{- argument.type }} : 
