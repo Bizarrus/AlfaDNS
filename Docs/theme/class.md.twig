@@ -48,12 +48,13 @@
 {% autoescape false %}
 {% for method in node.methods %}
 > [`{{ method.name|raw }}({% for argument in method.arguments %}
+{% set methodID = loop.index %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %})
-{{- method.response.type ? ' : '~method.response.type }}`](#method_{{ loop.index }})
+{{- method.response.type ? ' : '~method.response.type }}`](#method_{{ methodID }})
 > 
 {% endfor %}
 {% endautoescape %}
