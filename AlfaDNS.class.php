@@ -311,7 +311,7 @@
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Records.md Receives all DNS entries for a specific domain.
 		  *
 		  * @param string | object $name The Domain name or object
-		  * @param string("*", "A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT") $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
+		  * @param string{"*", "A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT"} $type The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)
 		  *
 		  * @return array
 		*/
