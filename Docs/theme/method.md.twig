@@ -36,9 +36,9 @@
 
 {% if method.response.description %}
 
-{%if method.response.description|raw%}
+{%if method.response.type|raw%}
 #### Returns
-{{ method.response.description|raw }}
+{{ method.response.type|raw }}
 {% endif %}
 
 {% endif %}
