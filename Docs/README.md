@@ -23,7 +23,7 @@ public function __construct(string $username, string $password): mixed
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -33,7 +33,6 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -47,7 +46,7 @@ public function getDomains(int $limit = 10, int $page = 1): array
 Retrieves the domains entered in the name server and their IDs.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -57,7 +56,6 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -71,7 +69,7 @@ public function getDomain(string $name): object
 Get the Domain data by the name.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -80,7 +78,6 @@ Get the Domain data by the name.
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -94,7 +91,7 @@ public function getDomainID(string $name): int
 Get the unique ID of an Domain
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -103,7 +100,6 @@ Get the unique ID of an Domain
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -117,7 +113,7 @@ public function getRecords(mixed $domain, string $type = &#039;*&#039;, string $
 Receives all DNS entries for a specific domain.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -128,7 +124,6 @@ Receives all DNS entries for a specific domain.
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -142,7 +137,7 @@ public function getRecord(mixed $domain, string $type = &#039;*&#039;, string $n
 Get a DNS record.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -153,7 +148,6 @@ Get a DNS record.
 
 
 **Return Value:**  
-
 
 ---
 ```php
@@ -167,7 +161,7 @@ public function updateRecord(string $domain, string $record, string $value, stri
 Update a DNS record.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -181,7 +175,6 @@ Update a DNS record.
 
 **Return Value:**  
 
-
 ---
 ```php
 public function createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
@@ -194,7 +187,7 @@ public function createRecord(string $domain, string $name, string $type, string 
 Create a DNS record.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -209,7 +202,6 @@ Create a DNS record.
 
 **Return Value:**  
 
-
 ---
 ```php
 public function deleteRecord(string $domain, string $record): mixed
@@ -222,7 +214,7 @@ public function deleteRecord(string $domain, string $record): mixed
 Deletes a DNS record.
 
 
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -232,7 +224,6 @@ Deletes a DNS record.
 
 
 **Return Value:**  
-
 
 
 

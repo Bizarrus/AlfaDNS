@@ -24,7 +24,7 @@
 {{ method.description|raw }}
 
 {% if method.arguments is not empty %}
-**Parameters:**
+#### Parameters
 
 | Parameter | Type | Description |
 |-----------|------|-------------|
@@ -37,7 +37,6 @@
 {% if method.response.description %}
 
 {%if method.response.description|raw%}**Return Value:** {{ method.response.description|raw }} {% endif %}
-
 
 {% endif %}
 
