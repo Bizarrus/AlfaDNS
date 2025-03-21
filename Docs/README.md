@@ -56,7 +56,7 @@ Authentication takes place via the Alfahosting DNS server account.
 ---
 ### <a name="getDomains">
 ```php
-public getDomains(int : $limit = 10, int : $page = 1) : array
+public getDomains(int : $limit = , int : $page = ) : array
 ```
 </a>
 
@@ -129,7 +129,7 @@ Get the unique ID of an Domain
 ---
 ### <a name="getRecords">
 ```php
-public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
+public getRecords(string|object : $domain, string : $type = , string|object : $name = ) : array
 ```
 </a>
 
@@ -155,7 +155,7 @@ Receives all DNS entries for a specific domain.
 ---
 ### <a name="getRecord">
 ```php
-public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
+public getRecord(string : $domain, string : $type = , string : $name) : object|null
 ```
 </a>
 
@@ -181,7 +181,7 @@ Get a DNS record.
 ---
 ### <a name="updateRecord">
 ```php
-public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
+public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = ) : void
 ```
 </a>
 
@@ -208,7 +208,7 @@ Update a DNS record.
 ---
 ### <a name="createRecord">
 ```php
-public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
+public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = ) : mixed
 ```
 </a>
 
