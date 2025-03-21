@@ -45,7 +45,7 @@ The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
 <h6>Usage</h6>
-<pre lang="php">$dns = new AlfaDNS( :  $username,  :  $password);</pre>
+<pre lang="php">$dns = new AlfaDNS(DD> :  $username, DD> :  $password);</pre>
 
 
 <h6>Parameters</h6>
@@ -69,7 +69,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->call( :  $action,  :  $data = null,  :  $headers = [],  :  $cookies = []);</pre>
+<pre lang="php">$dns->call(DD> :  $action, DD> :  $data = null, DD> :  $headers = [], DD> :  $cookies = []);</pre>
 
 
 <h6>Parameters</h6>
@@ -96,7 +96,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->ajax( :  $action,  :  $data = null);</pre>
+<pre lang="php">$dns->ajax(DD> :  $action, DD> :  $data = null);</pre>
 
 
 <h6>Parameters</h6>
@@ -121,7 +121,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->form( :  $action,  :  $data = null,  :  $headers = []);</pre>
+<pre lang="php">$dns->form(DD> :  $action, DD> :  $data = null, DD> :  $headers = []);</pre>
 
 
 <h6>Parameters</h6>
@@ -147,7 +147,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->login( :  $username,  :  $password);</pre>
+<pre lang="php">$dns->login(DD> :  $username, DD> :  $password);</pre>
 
 
 <h6>Parameters</h6>
@@ -169,7 +169,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getDomains( :  $limit = 10,  :  $page = 1);</pre>
+<pre lang="php">$dns->getDomains(DD> :  $limit = 10, DD> :  $page = 1);</pre>
 
 
 <h6>Parameters</h6>
@@ -191,7 +191,7 @@ Get the Domain data by the name.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getDomain( :  $name);</pre>
+<pre lang="php">$dns->getDomain(DD> :  $name);</pre>
 
 
 <h6>Parameters</h6>
@@ -212,7 +212,7 @@ Get the unique ID of an Domain
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getDomainID( :  $name);</pre>
+<pre lang="php">$dns->getDomainID(DD> :  $name);</pre>
 
 
 <h6>Parameters</h6>
@@ -233,7 +233,7 @@ Receives all DNS entries for a specific domain.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getRecords( :  $domain,  :  $type = '*',  :  $name = '*');</pre>
+<pre lang="php">$dns->getRecords(DD>DD> :  $domain, DD> :  $type = '*', DD> :  $name = '*');</pre>
 
 
 <h6>Parameters</h6>
@@ -256,7 +256,7 @@ Get a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->getRecord( :  $domain,  :  $type = '*',  :  $name);</pre>
+<pre lang="php">$dns->getRecord(DD>DD> :  $domain, DD> :  $type = '*', DD> :  $name);</pre>
 
 
 <h6>Parameters</h6>
@@ -279,7 +279,7 @@ Update a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->updateRecord( :  $domain,  :  $record,  :  $value,  :  $prio,  :  $ttl = 60);</pre>
+<pre lang="php">$dns->updateRecord(DD> :  $domain, DD> :  $record, DD> :  $value, DD> :  $prio, DD> :  $ttl = 60);</pre>
 
 
 <h6>Parameters</h6>
@@ -303,7 +303,7 @@ Create a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->createRecord( :  $domain,  :  $name,  :  $type,  :  $value,  :  $prio,  :  $ttl = 60);</pre>
+<pre lang="php">$dns->createRecord(DD> :  $domain, DD> :  $name, DD> :  $type, DD> :  $value, DD> :  $prio, DD> :  $ttl = 60);</pre>
 
 
 <h6>Parameters</h6>
@@ -329,7 +329,7 @@ Deletes a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->deleteRecord( :  $domain,  :  $record);</pre>
+<pre lang="php">$dns->deleteRecord(DD> :  $domain, DD> :  $record);</pre>
 
 
 <h6>Parameters</h6>
