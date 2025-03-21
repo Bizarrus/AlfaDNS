@@ -10,7 +10,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> 🟢 [`TEST__construct(string : $username, string : $password) : void`](#__construct)
+> 🟢 [`TEST(string : $username, string : $password) : void`](#__construct)
 > 
 > 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
 > 
