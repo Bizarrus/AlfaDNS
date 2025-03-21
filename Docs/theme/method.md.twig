@@ -15,10 +15,19 @@
 {% endautoescape %}
 
 {% if method.static %}* This method is **static**.{% endif %}
-
 {% if method.abstract %}* This method is **abstract**.{% endif %}
-
 {% if method.final %}* This method is **final**.{% endif %}
+
+{% if method.visibility == 'protected' %}
+{% if method.deprecated %}
+> [!WARNING]
+> 🟠 This method is **protected**.
+{% endif %}
+{% endif %}
+{% if method.visibility == 'private' %}
+> [!WARNING]
+> 🔴 This method is **private**.
+{% endif %}
 {% if method.deprecated %}
 > [!WARNING]
 > This method is **deprecated**. This means that this method will likely be removed in a future version.
