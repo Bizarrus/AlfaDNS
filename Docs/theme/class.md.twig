@@ -52,7 +52,7 @@
 {{- argument.name }}{{ argument.default ? ' = '~argument.default }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %})
-{{- method.response.type ? ' : '~method.response.type }}`](#method-{{ method.name|raw }})
+{{- method.response.type ? ' : '~method.response.type }}`](#{{ method.name|raw }})
 > 
 {% endfor %}
 

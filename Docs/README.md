@@ -10,27 +10,27 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> [`__construct(string : $username, string : $password) : void`](#method-__construct)
+> [`__construct(string : $username, string : $password) : void`](#__construct)
 > 
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method-getDomains)
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getDomains)
 > 
-> [`getDomain(string : $name) : object|null`](#method-getDomain)
+> [`getDomain(string : $name) : object|null`](#getDomain)
 > 
-> [`getDomainID(string : $name) : int|null`](#method-getDomainID)
+> [`getDomainID(string : $name) : int|null`](#getDomainID)
 > 
-> [`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`](#method-getRecords)
+> [`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`](#getRecords)
 > 
-> [`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`](#method-getRecord)
+> [`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`](#getRecord)
 > 
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method-updateRecord)
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updateRecord)
 > 
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method-createRecord)
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createRecord)
 > 
-> [`deleteRecord(string : $domain, string : $record) : void`](#method-deleteRecord)
+> [`deleteRecord(string : $domain, string : $record) : void`](#deleteRecord)
 > 
 
 ---
-### <a name="method-__construct">__construct</a>
+### __construct
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -53,7 +53,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="method-getDomains">getDomains</a>
+### getDomains
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -77,7 +77,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="method-getDomain">getDomain</a>
+### getDomain
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -100,7 +100,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="method-getDomainID">getDomainID</a>
+### getDomainID
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -123,7 +123,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="method-getRecords">getRecords</a>
+### getRecords
 ```php
 public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
@@ -148,7 +148,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="method-getRecord">getRecord</a>
+### getRecord
 ```php
 public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
 ```
@@ -173,7 +173,7 @@ Get a DNS record.
 
 
 ---
-### <a name="method-updateRecord">updateRecord</a>
+### updateRecord
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -199,7 +199,7 @@ Update a DNS record.
 
 
 ---
-### <a name="method-createRecord">createRecord</a>
+### createRecord
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -227,7 +227,7 @@ Create a DNS record.
 
 
 ---
-### <a name="method-deleteRecord">deleteRecord</a>
+### deleteRecord
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
