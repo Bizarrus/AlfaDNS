@@ -35,7 +35,9 @@
 {% endif %}{# method.arguments is not empty #}
 
 {% if method.response.description %}
-**Return Value:**
+
+{%if method.response%}**Return Value:** {% endif %}
+
 
 {{ method.response.description|raw }}
 

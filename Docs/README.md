@@ -31,7 +31,8 @@ Authentication takes place via the Alfahosting DNS server account.
 | `password` | **string** | The Password |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -56,7 +57,8 @@ Retrieves the domains entered in the name server and their IDs.
 | `page` | **int** | The page of the List |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -80,7 +82,8 @@ Get the Domain data by the name.
 | `name` | **string** | The Domain name |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -104,7 +107,8 @@ Get the unique ID of an Domain
 | `name` | **string** | The Domain name |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -130,7 +134,8 @@ Receives all DNS entries for a specific domain.
 | `name` | **string** | The Domain name |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -156,7 +161,8 @@ Get a DNS record.
 | `name` | **string** | The Record name |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -184,7 +190,8 @@ Update a DNS record.
 | `ttl` | **string** | The new ttl of the Record |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -213,7 +220,8 @@ Create a DNS record.
 | `ttl` | **string** | The new ttl of the Record |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
@@ -238,7 +246,8 @@ Deletes a DNS record.
 | `record` | **string** | The Record object |
 
 
-**Return Value:**
+
+**Return Value:** 
 
 
 
