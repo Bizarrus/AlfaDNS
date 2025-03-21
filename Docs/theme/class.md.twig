@@ -4,7 +4,6 @@
 # :copyright: `{{ node.FullyQualifiedStructuralElementName }}`
 
 {{ node.summary|raw }}
-
 {{ node.description|raw }}
 
 {% if node.parent %}* Parent class: {{ macros.mdClassLink(node.parent, macros.mdClassPath(node), node.parent.FullyQualifiedStructuralElementName) }}
