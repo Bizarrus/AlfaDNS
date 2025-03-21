@@ -18,7 +18,7 @@ Object (
     [name]		=> _acme-challenge.example.com
     [type]		=> TXT
     [value]		=> Am4jriFJJSfUbCx0Z2ylXEEurQF27mp5FICQJTwZMPQ
-    [priority]	=> 0
+    [priority]		=> 0
     [ttl]		=> 60
 )
 ```
