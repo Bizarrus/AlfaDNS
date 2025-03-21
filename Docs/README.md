@@ -11,32 +11,23 @@ This project was created because Alfahosting does not offer an interface for the
 
 ## Methods
 
-The Constructor of the Class.
-Authentication takes place via the Alfahosting DNS server account.
+__construct
 
-Retrieves the domains entered in the name server and their IDs.
+getDomains
 
+getDomain
 
-Get the Domain data by the name.
+getDomainID
 
+getRecords
 
-Get the unique ID of an Domain
+getRecord
 
+updateRecord
 
-Receives all DNS entries for a specific domain.
+createRecord
 
-
-Get a DNS record.
-
-
-Update a DNS record.
-
-
-Create a DNS record.
-
-
-Deletes a DNS record.
-
+deleteRecord
 
 ---
 ```php
