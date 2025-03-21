@@ -1,5 +1,6 @@
 {# Method signature #}
 ---
+{% autoescape false %}
 ### <a name="{{ method.name|raw }}">
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
@@ -9,6 +10,7 @@
 {%- endfor %})
 {{- method.response.type ? ' : '~method.response.type }}
 ```
+{% endautoescape %}
 </a>
 
 {% if method.static %}* This method is **static**.{% endif %}
