@@ -24,7 +24,7 @@
 
 <h6>Usage</h6>
 <pre lang="php">{% if method.name|raw == '__construct' %}$dns = new {{ node.name|raw }}{% else %}$dns->{{ method.name }}{% endif %}({% for argument in method.arguments %}
-{% if argument.type %}{% for type in argument.type|split('|') %}DD>{% endfor %} : {% endif %}
+{% if argument.type %}{{ argument.type|split('|')|join(' | ') }} : {% endif %}
 {{- argument.byReference ? '&' }} ${{- argument.name }}{{- argument.default ? ' = ' ~ argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %});</pre>
