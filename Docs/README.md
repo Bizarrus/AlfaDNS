@@ -4,7 +4,7 @@
 Helper class for the Alfahosting DNS to automatically read/write nameserver entries for domains.
 
 This project is used, for example, with the Library [GitHub: skoerfgen/ACMECert](https://github.com/skoerfgen/ACMECert) to automatically renew `Let's Encrypt` wildcard certificates.
-This project was created because Alfahosting does not offer an interface for the DNS server for normal customers and the SOAP interface is only available from the Name 500 package plan. This library automatically connects to the normal user interface via HTTP request and can be used for automated handling of DNS settings.
+This project was created because Alfahosting does not offer an interface for the DNS server for normal customers and the [SOAP interface](https://dns.alfahosting.de/api/) is **only** available from the [Name 500](https://alfahosting.de/eigene-nameserver/) package plan. This library automatically connects to the normal user interface via HTTP request and can be used for automated handling of DNS settings.
 
 
 
