@@ -18,9 +18,9 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 > [`getDomainID(string : $name) : int|null`](#getDomainID)
 > 
-> [`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`](#getRecords)
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getRecords)
 > 
-> [`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`](#getRecord)
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getRecord)
 > 
 > [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updateRecord)
 > 

@@ -45,6 +45,7 @@
 {# Check methods #}
 {% if node.methods|length > 0 %}
 ## Methods
+{% autoescape false %}
 {% for method in node.methods %}
 > [`{{ method.name|raw }}({% for argument in method.arguments %}
 {{- argument.type }} : 
@@ -55,6 +56,7 @@
 {{- method.response.type ? ' : '~method.response.type }}`](#{{ method.name|raw }})
 > 
 {% endfor %}
+{% endautoescape %}
 
 {% for method in node.methods %}
 {% include 'method.md.twig' %}
