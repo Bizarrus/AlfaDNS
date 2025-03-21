@@ -1,7 +1,8 @@
 {# Method signature #}
 ---
 ```php
-{% if method.final %}final {% endif %}{{method.visibility}} function {{ method.name }}({% for argument in method.arguments %}
+[{{ method.response.type|raw }}]
+{% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default }}
