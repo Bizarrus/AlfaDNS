@@ -11,31 +11,31 @@ This project was created because Alfahosting does not offer an interface for the
 
 ## Methods
 
-`__construct();`
+`__construct(string : $username, string : $password) : void`
 
 
-`getDomains();`
+`getDomains(int : $limit = 10, int : $page = 1) : array`
 
 
-`getDomain();`
+`getDomain(string : $name) : object|null`
 
 
-`getDomainID();`
+`getDomainID(string : $name) : int|null`
 
 
-`getRecords();`
+`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`
 
 
-`getRecord();`
+`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`
 
 
-`updateRecord();`
+`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`
 
 
-`createRecord();`
+`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`
 
 
-`deleteRecord();`
+`deleteRecord(string : $domain, string : $record) : void`
 
 
 ---

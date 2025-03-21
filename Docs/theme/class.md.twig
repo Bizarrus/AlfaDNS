@@ -47,7 +47,13 @@
 ## Methods
 {% for method in node.methods %}
 
-`{{ method.name|raw }}();`
+`{{ method.name|raw }}({% for argument in method.arguments %}
+{{- argument.type }} : 
+{{- argument.byReference ? '&' }} $
+{{- argument.name }}{{ argument.default ? ' = '~argument.default }}
+{%- if not loop.last %}, {% endif %}
+{%- endfor %})
+{{- method.response.type ? ' : '~method.response.type }}`
 
 {% endfor %}
 
