@@ -47,8 +47,8 @@
 ## Methods
 {% autoescape false %}
 {% for method in node.methods %}
+{{ method }}
 > [`{{ method.name|raw }}({% for argument in method.arguments %}
-{% set methodID = loop.index %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}

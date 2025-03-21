@@ -10,22 +10,31 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
+\AlfaDNS\AlfaDNS::__construct()
 > [`__construct(string : $username, string : $password) : void`](#method_\AlfaDNS\AlfaDNS::__construct())
 > 
+\AlfaDNS\AlfaDNS::getDomains()
 > [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_\AlfaDNS\AlfaDNS::getDomains())
 > 
+\AlfaDNS\AlfaDNS::getDomain()
 > [`getDomain(string : $name) : object|null`](#method_\AlfaDNS\AlfaDNS::getDomain())
 > 
+\AlfaDNS\AlfaDNS::getDomainID()
 > [`getDomainID(string : $name) : int|null`](#method_\AlfaDNS\AlfaDNS::getDomainID())
 > 
+\AlfaDNS\AlfaDNS::getRecords()
 > [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_\AlfaDNS\AlfaDNS::getRecords())
 > 
+\AlfaDNS\AlfaDNS::getRecord()
 > [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_\AlfaDNS\AlfaDNS::getRecord())
 > 
+\AlfaDNS\AlfaDNS::updateRecord()
 > [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_\AlfaDNS\AlfaDNS::updateRecord())
 > 
+\AlfaDNS\AlfaDNS::createRecord()
 > [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_\AlfaDNS\AlfaDNS::createRecord())
 > 
+\AlfaDNS\AlfaDNS::deleteRecord()
 > [`deleteRecord(string : $domain, string : $record) : void`](#method_\AlfaDNS\AlfaDNS::deleteRecord())
 > 
 
