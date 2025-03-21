@@ -13,7 +13,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 ---
 ```php
-public __construct(string : $username, string : $password) : mixed
+public __construct(string : $username, string : $password) : void
 ```
 
 
@@ -32,7 +32,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-#### Returns: `mixed`
+#### Returns: `void`
 
 
 ---
