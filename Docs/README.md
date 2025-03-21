@@ -30,10 +30,8 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### __construct
-```php
-public __construct(string : $username, string : $password) : void
-```
+### <a name="__construct">`public __construct(string : $username, string : $password) : void
+`</a>
 
 
 
@@ -53,10 +51,8 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### getDomains
-```php
-public getDomains(int : $limit = 10, int : $page = 1) : array
-```
+### <a name="getDomains">`public getDomains(int : $limit = 10, int : $page = 1) : array
+`</a>
 
 
 
@@ -77,10 +73,8 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### getDomain
-```php
-public getDomain(string : $name) : object|null
-```
+### <a name="getDomain">`public getDomain(string : $name) : object|null
+`</a>
 
 
 
@@ -100,10 +94,8 @@ Get the Domain data by the name.
 
 
 ---
-### getDomainID
-```php
-public getDomainID(string : $name) : int|null
-```
+### <a name="getDomainID">`public getDomainID(string : $name) : int|null
+`</a>
 
 
 
@@ -123,10 +115,8 @@ Get the unique ID of an Domain
 
 
 ---
-### getRecords
-```php
-public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
-```
+### <a name="getRecords">`public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
+`</a>
 
 
 
@@ -148,10 +138,8 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### getRecord
-```php
-public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
-```
+### <a name="getRecord">`public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null
+`</a>
 
 
 
@@ -173,10 +161,8 @@ Get a DNS record.
 
 
 ---
-### updateRecord
-```php
-public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
-```
+### <a name="updateRecord">`public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
+`</a>
 
 
 
@@ -199,10 +185,8 @@ Update a DNS record.
 
 
 ---
-### createRecord
-```php
-public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
-```
+### <a name="createRecord">`public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
+`</a>
 
 
 
@@ -227,10 +211,8 @@ Create a DNS record.
 
 
 ---
-### deleteRecord
-```php
-public deleteRecord(string : $domain, string : $record) : void
-```
+### <a name="deleteRecord">`public deleteRecord(string : $domain, string : $record) : void
+`</a>
 
 
 
