@@ -78,7 +78,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->call(string :  $action, array :  $data = null, array :  $headers = [], array :  $cookies = []);</pre>
+<pre lang="php">$dns->call(string :  $action, array :  $data = null, array :  $headers = [], array :  $cookies = []);</pre>
 
 
 <h6>Parameters</h6>
@@ -121,7 +121,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->ajax(string :  $action, array :  $data = null);</pre>
+<pre lang="php">$dns->ajax(string :  $action, array :  $data = null);</pre>
 
 
 <h6>Parameters</h6>
@@ -154,7 +154,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->form(string :  $action, array :  $data = null, array :  $headers = []);</pre>
+<pre lang="php">$dns->form(string :  $action, array :  $data = null, array :  $headers = []);</pre>
 
 
 <h6>Parameters</h6>
@@ -192,7 +192,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$bool = $dns->login(string :  $username, string :  $password);</pre>
+<pre lang="php">$dns->login(string :  $username, string :  $password);</pre>
 
 
 <h6>Parameters</h6>
@@ -222,7 +222,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->getDomains(int :  $limit = 10, int :  $page = 1);</pre>
+<pre lang="php">$dns->getDomains(int :  $limit = 10, int :  $page = 1);</pre>
 
 
 <h6>Parameters</h6>
@@ -302,7 +302,7 @@ Receives all DNS entries for a specific domain.
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->getRecords(string | object :  $domain, string :  $type = '*', string :  $name = '*');</pre>
+<pre lang="php">$dns->getRecords(string | object :  $domain, string :  $type = '*', string :  $name = '*');</pre>
 
 
 <h6>Parameters</h6>
@@ -372,7 +372,7 @@ Update a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$void = $dns->updateRecord(string :  $domain, string :  $record, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
+<pre lang="php">$dns->updateRecord(string :  $domain, string :  $record, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
 
 
 <h6>Parameters</h6>
@@ -416,7 +416,7 @@ Create a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$mixed = $dns->createRecord(string :  $domain, string :  $name, string :  $type, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
+<pre lang="php">$dns->createRecord(string :  $domain, string :  $name, string :  $type, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
 
 
 <h6>Parameters</h6>
@@ -466,7 +466,7 @@ Deletes a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$void = $dns->deleteRecord(string :  $domain, string :  $record);</pre>
+<pre lang="php">$dns->deleteRecord(string :  $domain, string :  $record);</pre>
 
 
 <h6>Parameters</h6>
