@@ -1,13 +1,12 @@
 {% import "include/macros.twig" as macros %}
 {% block content %}
 
-# {{ node.name }}
+# `{{ node.FullyQualifiedStructuralElementName }}`
 
 {{ node.summary|raw }}
 
 {{ node.description|raw }}
 
-* Full name: `{{ node.FullyQualifiedStructuralElementName }}`
 {% if node.parent %}* Parent class: {{ macros.mdClassLink(node.parent, macros.mdClassPath(node), node.parent.FullyQualifiedStructuralElementName) }}
 {% endif %}
 {% if node.final %}* This class is marked as **final** and can't be subclassed

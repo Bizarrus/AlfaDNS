@@ -1,11 +1,10 @@
 
-# AlfaDNS
+# `\AlfaDNS\AlfaDNS`
 
 
 
 
 
-* Full name: `\AlfaDNS\AlfaDNS`
 
 
 
