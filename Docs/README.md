@@ -73,8 +73,8 @@ $dns = new AlfaDNS(string : $username, string : $password);
 
 ---
 ### 🔴 <a name="call" id="call">call</a>
-> [!WARNING]
-> 🔴 This method is **private**.
+> [!IMPORTANT]
+> This method is **private**.
 Internal call HTTP Request
 
 #### Usage
@@ -99,8 +99,8 @@ $dns->call(string : $action, array : $data = null, array : $headers = [], array 
 
 ---
 ### 🔴 <a name="ajax" id="ajax">ajax</a>
-> [!WARNING]
-> 🔴 This method is **private**.
+> [!IMPORTANT]
+> This method is **private**.
 
 
 #### Usage
@@ -123,8 +123,8 @@ $dns->ajax(string : $action, array : $data = null);
 
 ---
 ### 🔴 <a name="form" id="form">form</a>
-> [!WARNING]
-> 🔴 This method is **private**.
+> [!IMPORTANT]
+> This method is **private**.
 
 
 #### Usage
@@ -148,8 +148,8 @@ $dns->form(string : $action, array : $data = null, array : $headers = []);
 
 ---
 ### 🟠 <a name="login" id="login">login</a>
-> [!WARNING]
-> 🟠 This method is **protected**.
+> [!IMPORTANT]
+> This method is **protected**.
 
 
 #### Usage

@@ -3,12 +3,12 @@
 {% autoescape false %}
 ### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a>
 {% if method.visibility == 'protected' %}
-> [!WARNING]
-> 🟠 This method is **protected**.
+> [!IMPORTANT]
+> This method is **protected**.
 {% endif %}
 {% if method.visibility == 'private' %}
-> [!WARNING]
-> 🔴 This method is **private**.
+> [!IMPORTANT]
+> This method is **private**.
 {% endif %}
 {% if method.deprecated %}
 > [!WARNING]
