@@ -51,7 +51,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### 🟢 <a name="__construct" id="__construct">__construct</a>
+### 🟢 <a name="__construct" id="__construct">new AlfaDNS</a>
 ```php
 public __construct(string : $username, string : $password) : void
 ```
