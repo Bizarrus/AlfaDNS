@@ -1,5 +1,8 @@
 {# Method signature #}
 ---
+{{ method.summary|raw }}
+{{ method.description|raw }}
+
 {% autoescape false %}
 ### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{% if method.name|raw == '__construct' %}Constructor{% else %}{{ method.name }}{% endif %}</a>
 ```php
@@ -20,9 +23,6 @@
 > [!WARNING]
 > This method is **deprecated**. This means that this method will likely be removed in a future version.
 {% endif %}
-
-{{ method.summary|raw }}
-{{ method.description|raw }}
 
 {% if method.arguments is not empty %}
 #### Parameters
