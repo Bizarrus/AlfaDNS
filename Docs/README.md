@@ -22,7 +22,7 @@ Be a team-player, all feedbacks of my donations will have the priority. I will b
 > 
 > 🔴 [`$array = $dns->call($action, $data = null, $headers = [], $cookies = []);`](#call)
 > 
-> 🔴 [`$array = $dns->ajax($action, $data = null);`](#ajax)
+> 🔴 [`$data = $dns->ajax($action, $data = null);`](#ajax)
 > 
 > 🔴 [`$array = $dns->form($action, $data = null, $headers = []);`](#form)
 > 
@@ -129,7 +129,7 @@ Internal call HTTP Request
 
 
 <h6>Usage</h6>
-<pre lang="php">$array = $dns->ajax(string : $action, array : $data = null);</pre>
+<pre lang="php">$data = $dns->ajax(string : $action, array : $data = null);</pre>
 
 
 <h6>Parameters</h6>
@@ -149,7 +149,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <kbd>array</kbd></h6>
+<h6>Returns: <kbd>object</kbd>, <kbd>null</kbd></h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="form" id="form">form</a></h4>
