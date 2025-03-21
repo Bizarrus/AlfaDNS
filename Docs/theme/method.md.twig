@@ -1,14 +1,16 @@
 {# Method signature #}
 ---
 ### <a name="{{ method.name|raw }}">
-```php
+```!php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %})
-{{- method.response.type ? ' : '~method.response.type }}```</a>
+{{- method.response.type ? ' : '~method.response.type }}
+```
+</a>
 
 {% if method.static %}* This method is **static**.{% endif %}
 
