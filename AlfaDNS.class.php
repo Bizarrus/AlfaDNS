@@ -315,7 +315,7 @@
 		  *
 		  * @return array
 		*/
-		public function getRecords(string | object $domain, string $type = '*', string $name = '*') : array {
+		public function getRecords(string | object $domain, string $type = "*", string $name = '*') : array {
 			if(is_string($domain)) {
 				$domain = $this->getDomainID($domain);
 			}
