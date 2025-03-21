@@ -1,5 +1,5 @@
 
-# `\AlfaDNS\AlfaDNS`
+# :copyright: `\AlfaDNS\AlfaDNS`
 
 Helper class for the Alfahosting DNS to automatically read/write nameserver entries for domains.
 
