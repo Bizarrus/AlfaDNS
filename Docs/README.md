@@ -53,10 +53,6 @@ This project was created because Alfahosting does not offer an interface for the
 <hr />
 <h4>🟢 <a name="__construct" id="__construct">Constructor</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
@@ -79,12 +75,9 @@ Authentication takes place via the Alfahosting DNS server account.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="call" id="call">call</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 > [!IMPORTANT]
+> 
 > This method is **private**.
 Internal call HTTP Request
 
@@ -110,12 +103,9 @@ Internal call HTTP Request
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 > [!IMPORTANT]
+> 
 > This method is **private**.
 
 
@@ -139,12 +129,9 @@ Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="form" id="form">form</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 > [!IMPORTANT]
+> 
 > This method is **private**.
 
 
@@ -169,13 +156,9 @@ Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟠 <a name="login" id="login">login</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 > [!IMPORTANT]
-
+> 
 > This method is **protected**.
 
 
@@ -199,10 +182,6 @@ Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Retrieves the domains entered in the name server and their IDs.
 
@@ -226,10 +205,6 @@ Retrieves the domains entered in the name server and their IDs.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Get the Domain data by the name.
 
@@ -252,10 +227,6 @@ Get the Domain data by the name.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Get the unique ID of an Domain
 
@@ -278,10 +249,6 @@ Get the unique ID of an Domain
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Receives all DNS entries for a specific domain.
 
@@ -306,10 +273,6 @@ Receives all DNS entries for a specific domain.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Get a DNS record.
 
@@ -334,10 +297,6 @@ Get a DNS record.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Update a DNS record.
 
@@ -363,10 +322,6 @@ Update a DNS record.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="createrecord" id="createrecord">createRecord</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Create a DNS record.
 
@@ -394,10 +349,6 @@ Create a DNS record.
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
-<div class="ghd-alert ghd-alert-accent"><p class="ghd-alert-title"><svg version="1.1" width="16" height="16" viewBox="0 0 16 16" class="octicon mr-2" aria-hidden=""><path d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8Zm8-6.5a6.5 6.5 0 1 0 0 13 6.5 6.5 0 0 0 0-13ZM6.5 7.75A.75.75 0 0 1 7.25 7h1a.75.75 0 0 1 .75.75v2.75h.25a.75.75 0 0 1 0 1.5h-2a.75.75 0 0 1 0-1.5h.25v-2h-.25a.75.75 0 0 1-.75-.75ZM8 6a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z"></path></svg>Note</p>
-<p>
-Die letzten beiden relativen Links in der obigen Tabelle funktionieren nur für Bilder in einem privaten Repository, wenn der Betrachter mindestens Lesezugriff auf das private Repository besitzt, das die Bilder enthält.</p>
-</div>
 
 Deletes a DNS record.
 
