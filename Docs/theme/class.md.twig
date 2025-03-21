@@ -45,6 +45,9 @@
 {# Check methods #}
 {% if node.methods|length > 0 %}
 ## Methods
+{% for method in node.methods %}
+{% include 'method.list.md.twig' %}
+{% endfor %}
 
 {% for method in node.methods %}
 {% include 'method.md.twig' %}

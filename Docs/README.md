@@ -11,6 +11,33 @@ This project was created because Alfahosting does not offer an interface for the
 
 ## Methods
 
+The Constructor of the Class.
+Authentication takes place via the Alfahosting DNS server account.
+
+Retrieves the domains entered in the name server and their IDs.
+
+
+Get the Domain data by the name.
+
+
+Get the unique ID of an Domain
+
+
+Receives all DNS entries for a specific domain.
+
+
+Get a DNS record.
+
+
+Update a DNS record.
+
+
+Create a DNS record.
+
+
+Deletes a DNS record.
+
+
 ---
 ```php
 public __construct(string : $username, string : $password) : void
