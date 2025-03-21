@@ -32,7 +32,9 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -55,7 +57,9 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -77,7 +81,9 @@ Get the Domain data by the name.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -99,7 +105,9 @@ Get the unique ID of an Domain
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -123,7 +131,9 @@ Receives all DNS entries for a specific domain.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -147,7 +157,9 @@ Get a DNS record.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -173,7 +185,9 @@ Update a DNS record.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -200,7 +214,9 @@ Create a DNS record.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 ---
 ```php
@@ -223,7 +239,9 @@ Deletes a DNS record.
 
 
 
-**Return Value:**  
+#### Returns
+
+
 
 
 
