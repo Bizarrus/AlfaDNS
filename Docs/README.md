@@ -30,7 +30,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### <a name="__construct">
+### <a name="method_<a href="__construct">__construct</a>">
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -54,7 +54,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="getDomains">
+### <a name="method_<a href="getDomains">getDomains</a>">
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -79,7 +79,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="getDomain">
+### <a name="method_<a href="getDomain">getDomain</a>">
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -103,7 +103,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="getDomainID">
+### <a name="method_<a href="getDomainID">getDomainID</a>">
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -127,7 +127,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="getRecords">
+### <a name="method_<a href="getRecords">getRecords</a>">
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -153,7 +153,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="getRecord">
+### <a name="method_<a href="getRecord">getRecord</a>">
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -179,7 +179,7 @@ Get a DNS record.
 
 
 ---
-### <a name="updateRecord">
+### <a name="method_<a href="updateRecord">updateRecord</a>">
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -206,7 +206,7 @@ Update a DNS record.
 
 
 ---
-### <a name="createRecord">
+### <a name="method_<a href="createRecord">createRecord</a>">
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -235,7 +235,7 @@ Create a DNS record.
 
 
 ---
-### <a name="deleteRecord">
+### <a name="method_<a href="deleteRecord">deleteRecord</a>">
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
