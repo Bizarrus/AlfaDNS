@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### <a name="method_{{ method.name }}">
+### <a name="method_{{ method.name }}_preview">
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 

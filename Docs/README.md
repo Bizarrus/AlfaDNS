@@ -10,27 +10,27 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> [`__construct(string : $username, string : $password) : void`](#method___construct)
+> [`__construct(string : $username, string : $password) : void`](#method___construct_preview)
 > 
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_getDomains)
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_getDomains_preview)
 > 
-> [`getDomain(string : $name) : object|null`](#method_getDomain)
+> [`getDomain(string : $name) : object|null`](#method_getDomain_preview)
 > 
-> [`getDomainID(string : $name) : int|null`](#method_getDomainID)
+> [`getDomainID(string : $name) : int|null`](#method_getDomainID_preview)
 > 
-> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_getRecords)
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_getRecords_preview)
 > 
-> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_getRecord)
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_getRecord_preview)
 > 
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_updateRecord)
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_updateRecord_preview)
 > 
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_createRecord)
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_createRecord_preview)
 > 
-> [`deleteRecord(string : $domain, string : $record) : void`](#method_deleteRecord)
+> [`deleteRecord(string : $domain, string : $record) : void`](#method_deleteRecord_preview)
 > 
 
 ---
-### <a name="method___construct">
+### <a name="method___construct_preview">
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -54,7 +54,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="method_getDomains">
+### <a name="method_getDomains_preview">
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -79,7 +79,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="method_getDomain">
+### <a name="method_getDomain_preview">
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -103,7 +103,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="method_getDomainID">
+### <a name="method_getDomainID_preview">
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -127,7 +127,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="method_getRecords">
+### <a name="method_getRecords_preview">
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -153,7 +153,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="method_getRecord">
+### <a name="method_getRecord_preview">
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -179,7 +179,7 @@ Get a DNS record.
 
 
 ---
-### <a name="method_updateRecord">
+### <a name="method_updateRecord_preview">
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -206,7 +206,7 @@ Update a DNS record.
 
 
 ---
-### <a name="method_createRecord">
+### <a name="method_createRecord_preview">
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -235,7 +235,7 @@ Create a DNS record.
 
 
 ---
-### <a name="method_deleteRecord">
+### <a name="method_deleteRecord_preview">
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
