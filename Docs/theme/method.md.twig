@@ -48,9 +48,10 @@
 {% if method.response.description %}
 
 {%if method.response.type|replace({'void': ''})|raw%}
-<h6>Returns: <strong>{{ method.response.type|raw|split('|') }}</strong></h6>
+<h6>Returns: {% for return in method.response.type|raw|split('|') %}
+{%- if not loop.last %}, {% endif %}
+{% endfor %}</h6>
 {% endif %}
-
 {% endif %}
 
 {% if method.tags.see is not empty or method.tags.link is not empty %}

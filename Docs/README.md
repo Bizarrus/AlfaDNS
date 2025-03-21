@@ -71,7 +71,6 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="call" id="call">call</a></h4>
 <dl><dd><dl><dd><dl><dd><dl><dd>
@@ -97,8 +96,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
@@ -123,8 +121,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🔴 <a name="form" id="form">form</a></h4>
@@ -150,8 +147,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟠 <a name="login" id="login">login</a></h4>
@@ -176,8 +172,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
@@ -199,8 +194,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
@@ -221,8 +215,7 @@ Get the Domain data by the name.
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: , </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
@@ -243,8 +236,7 @@ Get the unique ID of an Domain
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: , </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
@@ -267,8 +259,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
@@ -291,8 +282,7 @@ Get a DNS record.
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: , </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
@@ -314,7 +304,6 @@ Update a DNS record.
 <tr><td><kbd>prio</kbd></td><td><strong>string</strong></td><td><i>The new priority of the Record</i></td></tr>
 <tr><td><kbd>ttl</kbd></td><td><strong>string</strong></td><td><i>The new ttl of the Record</i></td></tr>
 </table>
-
 
 
 
@@ -343,8 +332,7 @@ Create a DNS record.
 
 
 
-<h6>Returns: <strong>Array</strong></h6>
-
+<h6>Returns: </h6>
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
 <h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
@@ -363,7 +351,6 @@ Deletes a DNS record.
 <tr><td><kbd>domain</kbd></td><td><strong>string</strong></td><td><i>The Domain name</i></td></tr>
 <tr><td><kbd>record</kbd></td><td><strong>string</strong></td><td><i>The Record object</i></td></tr>
 </table>
-
 
 
 
