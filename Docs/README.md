@@ -372,7 +372,7 @@ Update a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->updateRecord(string :  $domain, string :  $record, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
+<pre lang="php">$void = $dns->updateRecord(string :  $domain, string :  $record, string :  $value, string :  $prio, string :  $ttl = 60);</pre>
 
 
 <h6>Parameters</h6>
@@ -466,7 +466,7 @@ Deletes a DNS record.
 
 
 <h6>Usage</h6>
-<pre lang="php">$dns->deleteRecord(string :  $domain, string :  $record);</pre>
+<pre lang="php">$void = $dns->deleteRecord(string :  $domain, string :  $record);</pre>
 
 
 <h6>Parameters</h6>
