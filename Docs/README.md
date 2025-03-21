@@ -10,23 +10,23 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> [`__construct(string : $username, string : $password) : void`](#method_)
+> [`__construct(string : $username, string : $password) : void`](#method_1)
 > 
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_)
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_2)
 > 
-> [`getDomain(string : $name) : object|null`](#method_)
+> [`getDomain(string : $name) : object|null`](#method_3)
 > 
-> [`getDomainID(string : $name) : int|null`](#method_)
+> [`getDomainID(string : $name) : int|null`](#method_4)
 > 
-> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_)
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_5)
 > 
-> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_)
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_6)
 > 
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_)
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_7)
 > 
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_)
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_8)
 > 
-> [`deleteRecord(string : $domain, string : $record) : void`](#method_)
+> [`deleteRecord(string : $domain, string : $record) : void`](#method_9)
 > 
 
 ---
