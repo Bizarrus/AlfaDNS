@@ -312,6 +312,7 @@
 		  *
 		  * @param string | object $domain The Domain name or object
 		  * @param string{"*", "A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT"} $type The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)
+		  * @param string $name The name of the record
 		  *
 		  * @return array
 		*/
