@@ -19,6 +19,8 @@ public __construct(string : $username, string : $password) : void
 
 
 
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
+
 
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
@@ -42,6 +44,8 @@ public getDomains(int : $limit = 10, int : $page = 1) : array
 
 
 
+
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
 Retrieves the domains entered in the name server and their IDs.
@@ -67,6 +71,8 @@ public getDomain(string : $name) : object|null
 
 
 
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
+
 
 Get the Domain data by the name.
 
@@ -90,6 +96,8 @@ public getDomainID(string : $name) : int|null
 
 
 
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
+
 
 Get the unique ID of an Domain
 
@@ -112,6 +120,8 @@ public getRecords(string|object : $domain, string : $type = &#039;*&#039;, strin
 
 
 
+
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
 Receives all DNS entries for a specific domain.
@@ -138,6 +148,8 @@ public getRecord(string : $domain, string : $type = &#039;*&#039;, string : $nam
 
 
 
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
+
 
 Get a DNS record.
 
@@ -162,6 +174,8 @@ public updateRecord(string : $domain, string : $record, string : $value, string 
 
 
 
+
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
 Update a DNS record.
@@ -190,6 +204,8 @@ public createRecord(string : $domain, string : $name, string : $type, string : $
 
 
 
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
+
 
 Create a DNS record.
 
@@ -217,6 +233,8 @@ public deleteRecord(string : $domain, string : $record) : void
 
 
 
+
+* **Warning:** this method is **deprecated**. This means that this method will likely be removed in a future version.
 
 
 Deletes a DNS record.
