@@ -41,7 +41,7 @@
 {% for argument in method.arguments %}
 <tr>
 	<td><kbd>{{ argument.name }}</kbd></td>
-	<td>{% if argument.type %}<kbd>{{ argument.type ? argument.type|raw }}</kbd>{% endif %}</td>
+	<td>{% if argument.type %}{% for type in argument.type|raw|split('|') %}<kbd>{{ type }}</kbd>{% endfor %}{% endif %}</td>
 	<td><i>{% autoescape false %}{{ argument.description|raw|nl2br|replace({"\n": "", "\r": "", "\t": ""}) }}{% endautoescape %}</i></td>
 </tr>
 {% endfor %}
