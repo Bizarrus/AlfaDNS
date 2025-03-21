@@ -240,7 +240,7 @@ Receives all DNS entries for a specific domain.
 <table>
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr><td><kbd>domain</kbd></td><td><kbd>string|object</kbd></td><td><i></i></td></tr>
-<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (`*`, `A`, `AAAA`, `CNAME`, `HINFO`, `MX`, `NAPTR`, `NS`, `RP`, `SRV`, `TXT`)</i></td></tr>
+<tr><td><kbd>type</kbd></td><td><kbd>string</kbd></td><td><i>The Record type (&lt;kbd&gt;*&lt;/kbd&gt;, &lt;kbd&gt;A&lt;/kbd&gt;, &lt;kbd&gt;AAAA&lt;/kbd&gt;, &lt;kbd&gt;CNAME&lt;/kbd&gt;, &lt;kbd&gt;HINFO&lt;/kbd&gt;, &lt;kbd&gt;MX&lt;/kbd&gt;, &lt;kbd&gt;NAPTR&lt;/kbd&gt;, &lt;kbd&gt;NS&lt;/kbd&gt;, &lt;kbd&gt;RP&lt;/kbd&gt;, &lt;kbd&gt;SRV&lt;/kbd&gt;, &lt;kbd&gt;TXT&lt;/kbd&gt;)</i></td></tr>
 <tr><td><kbd>name</kbd></td><td><kbd>string|object</kbd></td><td><i>The Domain name or object</i></td></tr>
 </table>
 
