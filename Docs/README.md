@@ -10,7 +10,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> 🟢 [`new \AlfaDNS\AlfaDNS(string : $username, string : $password) : void`](#__construct)
+> 🟢 [`new AlfaDNS(string : $username, string : $password) : void`](#__construct)
 > 
 > 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
 > 
