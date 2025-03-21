@@ -5,7 +5,7 @@
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
 {{- argument.byReference ? '&' }} $
-{{- argument.name }}{{ argument.default ? ' = '~argument.default|raw }}
+{{- argument.name }}{{ argument.default|raw ? ' = '~argument.default|raw }}
 {%- if not loop.last %}, {% endif %}
 {%- endfor %})
 {{- method.response.type ? ' : '~method.response.type }}
