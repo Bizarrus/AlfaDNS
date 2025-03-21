@@ -18,7 +18,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 > [`getDomainID(string : $name) : int|null`](#getDomainID)
 > 
-> [`getRecords(string|object : $domain, string : $type = &quot;*&quot;, string|object : $name = &#039;*&#039;) : array`](#getRecords)
+> [`getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array`](#getRecords)
 > 
 > [`getRecord(string : $domain, string : $type = &#039;*&#039;, string : $name) : object|null`](#getRecord)
 > 
@@ -129,7 +129,7 @@ Get the unique ID of an Domain
 ---
 ### <a name="getRecords">
 ```php
-public getRecords(string|object : $domain, string : $type = &quot;*&quot;, string|object : $name = &#039;*&#039;) : array
+public getRecords(string|object : $domain, string : $type = &#039;*&#039;, string|object : $name = &#039;*&#039;) : array
 ```
 </a>
 
