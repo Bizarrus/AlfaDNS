@@ -9,9 +9,9 @@ This project was created because ![](https://raw.githubusercontent.com/Bizarrus/
 ![AlfaDNS](https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/AlfaDNS.png?raw=true)
 
 # Support me!
-Donations are an important contribution to the development of OpenSource projects. With your donation you can help us to advance our project. Your support enables us to support the programming.
+Donations are an important contribution to the development of OpenSource projects. With your donation you can help me to advance all projects. Your support enables me to support my programming time.
 
-Be a team-player, all feedbacks of our donations will have the priority. We will build the site for **YOU**!
+Be a team-player, all feedbacks of my donations will have the priority. I will build this for **YOU**!
 
 [![PAYPAL]](https://paypal.me/debitdirect)
 
