@@ -29,7 +29,7 @@
 		  * The Constructor of the Class.
 		  * Authentication takes place via the Alfahosting DNS server account.
 		  *
-		  * @method void __construct(string $username, string $password)
+		  * @method void AlfaDNS(string $username, string $password)
 		  *
 		  * @param string $username The Username
 		  * @param string $password The Password
