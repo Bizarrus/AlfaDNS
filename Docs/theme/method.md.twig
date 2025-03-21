@@ -2,7 +2,7 @@
 ---
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
-{{- argument.type }} 
+{{- argument.type }}: 
 {{- argument.byReference ? '&' }} $
 {{- argument.name }}{{ argument.default ? ' = '~argument.default }}
 {%- if not loop.last %}, {% endif %}
