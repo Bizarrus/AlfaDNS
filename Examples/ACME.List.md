@@ -21,24 +21,24 @@ print_r($challenges);
 ```
 
 # Result
-```
+```python
 Array (
-    [0] => stdClass Object (
+    [0] => Object (
 		[id]		=> 123456788
 		[name]		=> _acme-challenge.example.com
 		[type]		=> TXT
 		[value]		=> abcdefghijhlmnopqrstuvwxyz1234567890
 		[priority]	=> 0
 		[ttl]		=> 60
-	)
+    )
 
-    [1] => stdClass Object (
+    [1] => Object (
 		[id]		=> 123456789
 		[name]		=> _acme-challenge.example.com
 		[type]		=> TXT
 		[value]		=> abcdefghijhlmnopqrstuvwxyz1234567890
 		[priority]	=> 0
 		[ttl]		=> 60
-	)
+    )
 )
 ```
