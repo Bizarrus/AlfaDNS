@@ -32,8 +32,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-#### Returns
-mixed
+#### Returns: `mixed`
 
 
 ---
@@ -57,8 +56,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-#### Returns
-array
+#### Returns: `array`
 
 
 ---
@@ -81,8 +79,7 @@ Get the Domain data by the name.
 
 
 
-#### Returns
-object
+#### Returns: `object`
 
 
 ---
@@ -105,8 +102,7 @@ Get the unique ID of an Domain
 
 
 
-#### Returns
-int
+#### Returns: `int`
 
 
 ---
@@ -131,8 +127,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-#### Returns
-array
+#### Returns: `array`
 
 
 ---
@@ -157,8 +152,7 @@ Get a DNS record.
 
 
 
-#### Returns
-object|null
+#### Returns: `object|null`
 
 
 ---
@@ -185,8 +179,7 @@ Update a DNS record.
 
 
 
-#### Returns
-mixed
+#### Returns: `mixed`
 
 
 ---
@@ -214,8 +207,7 @@ Create a DNS record.
 
 
 
-#### Returns
-mixed
+#### Returns: `mixed`
 
 
 ---
@@ -239,8 +231,7 @@ Deletes a DNS record.
 
 
 
-#### Returns
-mixed
+#### Returns: `mixed`
 
 
 
