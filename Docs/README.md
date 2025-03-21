@@ -11,6 +11,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 ## Methods
 > 🟢 [`new AlfaDNS(string : $username, string : $password)
+`](#__construct)
 > 
 > 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = [])
  : array`](#call)
