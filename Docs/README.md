@@ -50,8 +50,8 @@ This project was created because Alfahosting does not offer an interface for the
  : void`](#deleterecord)
 > 
 
----
-### 🟢 <a name="__construct" id="__construct">Constructor</a>
+<hr />
+<h4>🟢 <a name="__construct" id="__construct">Constructor</a></h4>
 The Constructor of the Class.
 Authentication takes place via the Alfahosting DNS server account.
 
@@ -71,8 +71,8 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🔴 <a name="call" id="call">call</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🔴 <a name="call" id="call">call</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
 Internal call HTTP Request
@@ -97,8 +97,8 @@ Internal call HTTP Request
 <h6>Returns: `array`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🔴 <a name="ajax" id="ajax">ajax</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🔴 <a name="ajax" id="ajax">ajax</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
 
@@ -121,8 +121,8 @@ Internal call HTTP Request
 <h6>Returns: `array`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🔴 <a name="form" id="form">form</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🔴 <a name="form" id="form">form</a></h4>
 > [!IMPORTANT]
 > This method is **private**.
 
@@ -146,8 +146,8 @@ Internal call HTTP Request
 <h6>Returns: `array`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟠 <a name="login" id="login">login</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟠 <a name="login" id="login">login</a></h4>
 > [!IMPORTANT]
 > This method is **protected**.
 
@@ -170,8 +170,8 @@ Internal call HTTP Request
 <h6>Returns: `bool`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="getdomains" id="getdomains">getDomains</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="getdomains" id="getdomains">getDomains</a></h4>
 Retrieves the domains entered in the name server and their IDs.
 
 
@@ -192,8 +192,8 @@ Retrieves the domains entered in the name server and their IDs.
 <h6>Returns: `array`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="getdomain" id="getdomain">getDomain</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="getdomain" id="getdomain">getDomain</a></h4>
 Get the Domain data by the name.
 
 
@@ -213,8 +213,8 @@ Get the Domain data by the name.
 <h6>Returns: `object|null`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="getdomainid" id="getdomainid">getDomainID</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="getdomainid" id="getdomainid">getDomainID</a></h4>
 Get the unique ID of an Domain
 
 
@@ -234,8 +234,8 @@ Get the unique ID of an Domain
 <h6>Returns: `int|null`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="getrecords" id="getrecords">getRecords</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="getrecords" id="getrecords">getRecords</a></h4>
 Receives all DNS entries for a specific domain.
 
 
@@ -257,8 +257,8 @@ Receives all DNS entries for a specific domain.
 <h6>Returns: `array`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="getrecord" id="getrecord">getRecord</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="getrecord" id="getrecord">getRecord</a></h4>
 Get a DNS record.
 
 
@@ -280,8 +280,8 @@ Get a DNS record.
 <h6>Returns: `object|null`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="updaterecord" id="updaterecord">updateRecord</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="updaterecord" id="updaterecord">updateRecord</a></h4>
 Update a DNS record.
 
 
@@ -304,8 +304,8 @@ Update a DNS record.
 
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="createrecord" id="createrecord">createRecord</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="createrecord" id="createrecord">createRecord</a></h4>
 Create a DNS record.
 
 
@@ -330,8 +330,8 @@ Create a DNS record.
 <h6>Returns: `mixed`</h6>
 
 
-</dd></dl></dd></dl></dd></dl></dd></dl>---
-### 🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a>
+</dd></dl></dd></dl></dd></dl></dd></dl><hr />
+<h4>🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a></h4>
 Deletes a DNS record.
 
 
