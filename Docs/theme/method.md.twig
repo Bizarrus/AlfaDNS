@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### {% if method.visibility == 'protected' %}:large_red_diamond:{% endif %}{% if method.visibility == 'private' %}:black_circle:{% endif %}{% if method.visibility == 'public' %}:large_blue_diamond:{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{{ method.name }}</a>
+### {% if method.visibility == 'protected' %}🟠{% endif %}{% if method.visibility == 'private' %}🔴{% endif %}{% if method.visibility == 'public' %}🟢{% endif %} <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{{ method.name }}</a>
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 

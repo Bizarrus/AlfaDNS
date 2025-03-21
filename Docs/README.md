@@ -38,7 +38,7 @@ This project was created because Alfahosting does not offer an interface for the
 > 
 
 ---
-### :large_blue_diamond: <a name="__construct" id="__construct">__construct</a>
+### 🟢 <a name="__construct" id="__construct">__construct</a>
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -61,7 +61,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### :black_circle: <a name="call" id="call">call</a>
+### 🔴 <a name="call" id="call">call</a>
 ```php
 private call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array
 ```
@@ -87,7 +87,7 @@ Internal call HTTP Request
 
 
 ---
-### :black_circle: <a name="ajax" id="ajax">ajax</a>
+### 🔴 <a name="ajax" id="ajax">ajax</a>
 ```php
 private ajax(string : $action, array : $data = null) : array
 ```
@@ -111,7 +111,7 @@ private ajax(string : $action, array : $data = null) : array
 
 
 ---
-### :black_circle: <a name="form" id="form">form</a>
+### 🔴 <a name="form" id="form">form</a>
 ```php
 private form(string : $action, array : $data = null, array : $headers = []) : array
 ```
@@ -136,7 +136,7 @@ private form(string : $action, array : $data = null, array : $headers = []) : ar
 
 
 ---
-### :large_red_diamond: <a name="login" id="login">login</a>
+### 🟠 <a name="login" id="login">login</a>
 ```php
 protected login(string : $username, string : $password) : bool
 ```
@@ -160,7 +160,7 @@ protected login(string : $username, string : $password) : bool
 
 
 ---
-### :large_blue_diamond: <a name="getdomains" id="getdomains">getDomains</a>
+### 🟢 <a name="getdomains" id="getdomains">getDomains</a>
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -184,7 +184,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### :large_blue_diamond: <a name="getdomain" id="getdomain">getDomain</a>
+### 🟢 <a name="getdomain" id="getdomain">getDomain</a>
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -207,7 +207,7 @@ Get the Domain data by the name.
 
 
 ---
-### :large_blue_diamond: <a name="getdomainid" id="getdomainid">getDomainID</a>
+### 🟢 <a name="getdomainid" id="getdomainid">getDomainID</a>
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -230,7 +230,7 @@ Get the unique ID of an Domain
 
 
 ---
-### :large_blue_diamond: <a name="getrecords" id="getrecords">getRecords</a>
+### 🟢 <a name="getrecords" id="getrecords">getRecords</a>
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -255,7 +255,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### :large_blue_diamond: <a name="getrecord" id="getrecord">getRecord</a>
+### 🟢 <a name="getrecord" id="getrecord">getRecord</a>
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -280,7 +280,7 @@ Get a DNS record.
 
 
 ---
-### :large_blue_diamond: <a name="updaterecord" id="updaterecord">updateRecord</a>
+### 🟢 <a name="updaterecord" id="updaterecord">updateRecord</a>
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -306,7 +306,7 @@ Update a DNS record.
 
 
 ---
-### :large_blue_diamond: <a name="createrecord" id="createrecord">createRecord</a>
+### 🟢 <a name="createrecord" id="createrecord">createRecord</a>
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -334,7 +334,7 @@ Create a DNS record.
 
 
 ---
-### :large_blue_diamond: <a name="deleterecord" id="deleterecord">deleteRecord</a>
+### 🟢 <a name="deleterecord" id="deleterecord">deleteRecord</a>
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
