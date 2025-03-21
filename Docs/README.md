@@ -97,7 +97,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: `array`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -123,7 +123,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: `array`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -150,7 +150,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: `array`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -176,7 +176,7 @@ Internal call HTTP Request
 
 
 
-<h6>Returns: `bool`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -199,7 +199,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-<h6>Returns: `array`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -221,7 +221,7 @@ Get the Domain data by the name.
 
 
 
-<h6>Returns: `object|null`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -243,7 +243,7 @@ Get the unique ID of an Domain
 
 
 
-<h6>Returns: `int|null`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -267,7 +267,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-<h6>Returns: `array`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -291,7 +291,7 @@ Get a DNS record.
 
 
 
-<h6>Returns: `object|null`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
@@ -343,7 +343,7 @@ Create a DNS record.
 
 
 
-<h6>Returns: `mixed`</h6>
+<h6>Returns: <strong>Array</strong></h6>
 
 
 </dd></dl></dd></dl></dd></dl></dd></dl><hr />
