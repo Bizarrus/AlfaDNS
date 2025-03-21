@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### <a name="method_{{ method.name }}_preview" id="method_{{ method.name }}_preview">:heavy_minus_sign:</a> {{ method.name }}
+### :large_orange_diamond: <a name="{{ method.name|lower }}" id="{{ method.name|lower }}">{{ method.name }}</a>
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 

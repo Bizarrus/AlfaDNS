@@ -10,27 +10,27 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> [`__construct(string : $username, string : $password) : void`](#method___construct_preview)
+> [`__construct(string : $username, string : $password) : void`](#__construct)
 > 
-> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#method_getDomains_preview)
+> [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
-> [`getDomain(string : $name) : object|null`](#method_getDomain_preview)
+> [`getDomain(string : $name) : object|null`](#getdomain)
 > 
-> [`getDomainID(string : $name) : int|null`](#method_getDomainID_preview)
+> [`getDomainID(string : $name) : int|null`](#getdomainid)
 > 
-> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#method_getRecords_preview)
+> [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
 > 
-> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#method_getRecord_preview)
+> [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
 > 
-> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#method_updateRecord_preview)
+> [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
 > 
-> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#method_createRecord_preview)
+> [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
 > 
-> [`deleteRecord(string : $domain, string : $record) : void`](#method_deleteRecord_preview)
+> [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
 > 
 
 ---
-### <a name="method___construct_preview" id="method___construct_preview">:heavy_minus_sign:</a> __construct
+### :large_orange_diamond: <a name="__construct" id="__construct">__construct</a>
 ```php
 public __construct(string : $username, string : $password) : void
 ```
@@ -53,7 +53,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 ---
-### <a name="method_getDomains_preview" id="method_getDomains_preview">:heavy_minus_sign:</a> getDomains
+### :large_orange_diamond: <a name="getdomains" id="getdomains">getDomains</a>
 ```php
 public getDomains(int : $limit = 10, int : $page = 1) : array
 ```
@@ -77,7 +77,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 ---
-### <a name="method_getDomain_preview" id="method_getDomain_preview">:heavy_minus_sign:</a> getDomain
+### :large_orange_diamond: <a name="getdomain" id="getdomain">getDomain</a>
 ```php
 public getDomain(string : $name) : object|null
 ```
@@ -100,7 +100,7 @@ Get the Domain data by the name.
 
 
 ---
-### <a name="method_getDomainID_preview" id="method_getDomainID_preview">:heavy_minus_sign:</a> getDomainID
+### :large_orange_diamond: <a name="getdomainid" id="getdomainid">getDomainID</a>
 ```php
 public getDomainID(string : $name) : int|null
 ```
@@ -123,7 +123,7 @@ Get the unique ID of an Domain
 
 
 ---
-### <a name="method_getRecords_preview" id="method_getRecords_preview">:heavy_minus_sign:</a> getRecords
+### :large_orange_diamond: <a name="getrecords" id="getrecords">getRecords</a>
 ```php
 public getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array
 ```
@@ -148,7 +148,7 @@ Receives all DNS entries for a specific domain.
 
 
 ---
-### <a name="method_getRecord_preview" id="method_getRecord_preview">:heavy_minus_sign:</a> getRecord
+### :large_orange_diamond: <a name="getrecord" id="getrecord">getRecord</a>
 ```php
 public getRecord(string : $domain, string : $type = '*', string : $name) : object|null
 ```
@@ -173,7 +173,7 @@ Get a DNS record.
 
 
 ---
-### <a name="method_updateRecord_preview" id="method_updateRecord_preview">:heavy_minus_sign:</a> updateRecord
+### :large_orange_diamond: <a name="updaterecord" id="updaterecord">updateRecord</a>
 ```php
 public updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void
 ```
@@ -199,7 +199,7 @@ Update a DNS record.
 
 
 ---
-### <a name="method_createRecord_preview" id="method_createRecord_preview">:heavy_minus_sign:</a> createRecord
+### :large_orange_diamond: <a name="createrecord" id="createrecord">createRecord</a>
 ```php
 public createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed
 ```
@@ -227,7 +227,7 @@ Create a DNS record.
 
 
 ---
-### <a name="method_deleteRecord_preview" id="method_deleteRecord_preview">:heavy_minus_sign:</a> deleteRecord
+### :large_orange_diamond: <a name="deleterecord" id="deleterecord">deleteRecord</a>
 ```php
 public deleteRecord(string : $domain, string : $record) : void
 ```
