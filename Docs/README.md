@@ -309,7 +309,7 @@ Receives all DNS entries for a specific domain.
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr>
 	<td><kbd>domain</kbd></td>
-	<td><kbd>string</kbd><kbd>object</kbd></td>
+	<td><kbd>string</kbd>, <kbd>object</kbd></td>
 	<td><i>The Domain name or object</i></td>
 </tr>
 <tr>
@@ -344,7 +344,7 @@ Get a DNS record.
 <tr><th>Parameter</th><th>Type</th><th>Description</th></tr>
 <tr>
 	<td><kbd>domain</kbd></td>
-	<td><kbd>string</kbd><kbd>object</kbd></td>
+	<td><kbd>string</kbd>, <kbd>object</kbd></td>
 	<td><i>The Domain name</i></td>
 </tr>
 <tr>
