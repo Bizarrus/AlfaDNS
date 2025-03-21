@@ -13,8 +13,7 @@ This project was created because Alfahosting does not offer an interface for the
 
 ---
 ```php
-[mixed]
-public __construct(string $username, string $password): mixed
+[mixed] public __construct(string $username, string $password): mixed
 ```
 
 
@@ -38,8 +37,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 ---
 ```php
-[array]
-public getDomains(int $limit = 10, int $page = 1): array
+[array] public getDomains(int $limit = 10, int $page = 1): array
 ```
 
 
@@ -63,8 +61,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 ---
 ```php
-[object]
-public getDomain(string $name): object
+[object] public getDomain(string $name): object
 ```
 
 
@@ -87,8 +84,7 @@ Get the Domain data by the name.
 
 ---
 ```php
-[int]
-public getDomainID(string $name): int
+[int] public getDomainID(string $name): int
 ```
 
 
@@ -111,8 +107,7 @@ Get the unique ID of an Domain
 
 ---
 ```php
-[array]
-public getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
+[array] public getRecords(mixed $domain, string $type = &#039;*&#039;, string $name = &#039;*&#039;): array
 ```
 
 
@@ -137,8 +132,7 @@ Receives all DNS entries for a specific domain.
 
 ---
 ```php
-[object|null]
-public getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
+[object|null] public getRecord(mixed $domain, string $type = &#039;*&#039;, string $name): object|null
 ```
 
 
@@ -163,8 +157,7 @@ Get a DNS record.
 
 ---
 ```php
-[mixed]
-public updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
+[mixed] public updateRecord(string $domain, string $record, string $value, string $prio, string $ttl = 60): mixed
 ```
 
 
@@ -191,8 +184,7 @@ Update a DNS record.
 
 ---
 ```php
-[mixed]
-public createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
+[mixed] public createRecord(string $domain, string $name, string $type, string $value, string $prio, string $ttl = 60): mixed
 ```
 
 
@@ -220,8 +212,7 @@ Create a DNS record.
 
 ---
 ```php
-[mixed]
-public deleteRecord(string $domain, string $record): mixed
+[mixed] public deleteRecord(string $domain, string $record): mixed
 ```
 
 
