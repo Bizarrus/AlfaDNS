@@ -310,7 +310,7 @@
 		  * @method array getRecords(string $domain, string $type, string $name)
 		  * @example https://github.com/Bizarrus/AlfaDNS/blob/main/Examples/Records.md Receives all DNS entries for a specific domain.
 		  *
-		  * @param string | object $name The Domain name or object
+		  * @param string | object $domain The Domain name or object
 		  * @param string{"*", "A", "AAAA", "CNAME", "HINFO", "MX", "NAPTR", "NS", "RP", "SRV", "TXT"} $type The Record type (<kbd>*</kbd>, <kbd>A</kbd>, <kbd>AAAA</kbd>, <kbd>CNAME</kbd>, <kbd>HINFO</kbd>, <kbd>MX</kbd>, <kbd>NAPTR</kbd>, <kbd>NS</kbd>, <kbd>RP</kbd>, <kbd>SRV</kbd>, <kbd>TXT</kbd>)
 		  *
 		  * @return array
