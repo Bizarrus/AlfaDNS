@@ -10,31 +10,31 @@ This project was created because Alfahosting does not offer an interface for the
 
 
 ## Methods
-> :small_blue_diamond: [`__construct(string : $username, string : $password) : void`](#__construct)
+> 🟢 [`__construct(string : $username, string : $password) : void`](#__construct)
 > 
-> :black_circle: [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
+> 🔴 [`call(string : $action, array : $data = null, array : $headers = [], array : $cookies = []) : array`](#call)
 > 
-> :black_circle: [`ajax(string : $action, array : $data = null) : array`](#ajax)
+> 🔴 [`ajax(string : $action, array : $data = null) : array`](#ajax)
 > 
-> :black_circle: [`form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
+> 🔴 [`form(string : $action, array : $data = null, array : $headers = []) : array`](#form)
 > 
-> :small_orange_diamond: [`login(string : $username, string : $password) : bool`](#login)
+> 🟠 [`login(string : $username, string : $password) : bool`](#login)
 > 
-> :small_blue_diamond: [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
+> 🟢 [`getDomains(int : $limit = 10, int : $page = 1) : array`](#getdomains)
 > 
-> :small_blue_diamond: [`getDomain(string : $name) : object|null`](#getdomain)
+> 🟢 [`getDomain(string : $name) : object|null`](#getdomain)
 > 
-> :small_blue_diamond: [`getDomainID(string : $name) : int|null`](#getdomainid)
+> 🟢 [`getDomainID(string : $name) : int|null`](#getdomainid)
 > 
-> :small_blue_diamond: [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
+> 🟢 [`getRecords(string|object : $domain, string : $type = '*', string|object : $name = '*') : array`](#getrecords)
 > 
-> :small_blue_diamond: [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
+> 🟢 [`getRecord(string : $domain, string : $type = '*', string : $name) : object|null`](#getrecord)
 > 
-> :small_blue_diamond: [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
+> 🟢 [`updateRecord(string : $domain, string : $record, string : $value, string : $prio, string : $ttl = 60) : void`](#updaterecord)
 > 
-> :small_blue_diamond: [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
+> 🟢 [`createRecord(string : $domain, string : $name, string : $type, string : $value, string : $prio, string : $ttl = 60) : mixed`](#createrecord)
 > 
-> :small_blue_diamond: [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
+> 🟢 [`deleteRecord(string : $domain, string : $record) : void`](#deleterecord)
 > 
 
 ---
