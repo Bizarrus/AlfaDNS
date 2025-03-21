@@ -6,7 +6,7 @@ I recommend the library [GitHub: skoerfgen/ACMECert](https://github.com/skoerfge
 # Example
 A Full Example can be found on [ACME.List.php](ACME.List.php).
 
-```!php
+```php
 $dns		= new AlfaDNS('<username>', '<password>');
 $records	= $dns->getRecords('example.com', 'TXT');
 $challenges	= [];
