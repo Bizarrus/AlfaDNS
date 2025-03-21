@@ -32,9 +32,7 @@ Authentication takes place via the Alfahosting DNS server account.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -58,9 +56,7 @@ Retrieves the domains entered in the name server and their IDs.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -83,9 +79,7 @@ Get the Domain data by the name.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -108,9 +102,7 @@ Get the unique ID of an Domain
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -135,9 +127,7 @@ Receives all DNS entries for a specific domain.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -162,9 +152,7 @@ Get a DNS record.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -191,9 +179,7 @@ Update a DNS record.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -221,9 +207,7 @@ Create a DNS record.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 ---
@@ -247,9 +231,7 @@ Deletes a DNS record.
 
 
 
-**Return Value:** 
-
-
+**Return Value:**  
 
 
 

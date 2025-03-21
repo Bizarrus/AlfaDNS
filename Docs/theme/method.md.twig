@@ -36,10 +36,8 @@
 
 {% if method.response.description %}
 
-{%if method.response%}**Return Value:** {% endif %}
+{%if method.response.description|raw%}**Return Value:** {{ method.response.description|raw }} {% endif %}
 
-
-{{ method.response.description|raw }}
 
 {% endif %}
 
