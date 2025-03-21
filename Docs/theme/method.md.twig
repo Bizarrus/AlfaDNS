@@ -1,7 +1,7 @@
 {# Method signature #}
 ---
 {% autoescape false %}
-### <a name="method_{{ method.name|route('class:short') }}">
+### <a name="method_{{ method.name|route('class:normal') }}">
 ```php
 {% if method.final %}final {% endif %}{{method.visibility}} {{ method.name }}({% for argument in method.arguments %}
 {{- argument.type }} : 
